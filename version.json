@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1",
+  "version": "1.1.0",
   "date": "2026-10-29",
-  "changes": ["Ajoute les jeux Cyclopéen, HAPAX et Mission Secrète"]
+  "changes": ["Ajoute les captures des projets", "Ajoute automatiquement les nouveaux dépôts au hub"]
 }

@@ -1,5 +1,7 @@
 # Ajouter un projet (2 minutes)
 
+Un nouveau dépôt public est ajouté **automatiquement** par le workflow `sync-repos` (voir le README). Ce qui suit sert à ajouter ou corriger un projet à la main.
+
 Tout vit dans `data/projects.json`. Aucun code à toucher.
 
 ## Méthode rapide (script)

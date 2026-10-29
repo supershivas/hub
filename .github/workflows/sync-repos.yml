@@ -1,0 +1,49 @@
+name: Synchroniser les projets
+
+# Ajoute automatiquement au hub les nouveaux dépôts publics du compte, avec une capture de leur démo.
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+  repository_dispatch:
+    types: [nouvelle-app]
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: sync-repos
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Ajouter les nouveaux dépôts
+        run: node scripts/sync-repos.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Capturer les démos des nouveaux projets
+        run: |
+          git diff --quiet data/projects.json && exit 0
+          npm i --no-save playwright
+          npx playwright install --with-deps chromium
+          node scripts/screenshot.mjs
+      - name: Valider
+        run: node scripts/new-project.mjs --validate
+      - name: Publier
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git add data assets
+          git diff --cached --quiet && { echo "Rien à publier."; exit 0; }
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Ajoute automatiquement les nouveaux projets"
+          git push
+          # Un push fait avec GITHUB_TOKEN ne déclenche pas le déploiement : on le lance explicitement.
+          gh workflow run pages.yml

@@ -1,7 +1,8 @@
 {
   "site": {
     "name": "Supershivas",
-    "tagline": "Apps, jeux et sites — tout au même endroit."
+    "tagline": "Apps, jeux et sites — tout au même endroit.",
+    "owner": "supershivas"
   },
   "links": [
     {
@@ -54,7 +55,7 @@
       ],
       "summary": "Éditeur de notes maison, synchronisé entre appareils.",
       "description": "Éditeur de notes maison, synchronisé entre appareils.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/idee/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://idee-neon.vercel.app/",
@@ -79,7 +80,7 @@
       "tags": [],
       "summary": "Application web Next.js hébergée sur Vercel.",
       "description": "Application web Next.js hébergée sur Vercel.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/source/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://source-sigma-kohl.vercel.app/app",
@@ -107,7 +108,7 @@
       ],
       "summary": "Comparateur de voitures, entièrement statique : les données vivent dans un JSON versionné.",
       "description": "Comparateur de voitures, entièrement statique : les données vivent dans un JSON versionné.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/projetV/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://supershivas.github.io/projetV/",
@@ -134,7 +135,7 @@
       ],
       "summary": "Application de suivi de portefeuille d'actions.",
       "description": "Application de suivi de portefeuille d'actions.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/stockportfolio/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://stockportfolio-five.vercel.app/",
@@ -158,7 +159,7 @@
       "tags": [],
       "summary": "Un petit studio de création dans le navigateur.",
       "description": "Un petit studio de création dans le navigateur.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/studio-crea/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://supershivas.github.io/studio-crea/",
@@ -184,7 +185,7 @@
       ],
       "summary": "Dessine et édite des schémas électriques dans le navigateur.",
       "description": "Dessine et édite des schémas électriques dans le navigateur.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/elec-aiti/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://supershivas.github.io/elec-aiti/",
@@ -212,7 +213,7 @@
       ],
       "summary": "Éditeur de plans de pièce en 2D avec vue 3D et rendu réaliste de la lumière.",
       "description": "Éditeur de plans de pièce en 2D avec vue 3D et rendu réaliste de la lumière.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/roomplanner/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://supershivas.github.io/roomplanner/",
@@ -240,7 +241,7 @@
       ],
       "summary": "Éditeur de pixel art dans le navigateur, installable et utilisable hors ligne.",
       "description": "Éditeur de pixel art dans le navigateur, installable et utilisable hors ligne.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/pixel-studio/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://supershivas.github.io/pixel-studio/",
@@ -267,7 +268,7 @@
       ],
       "summary": "Un atelier de dessin tactile, à la trame, pour la bande dessinée.",
       "description": "Un atelier de dessin tactile, à la trame, pour la bande dessinée.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/fusain/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://supershivas.github.io/fusain/",
@@ -294,7 +295,7 @@
       ],
       "summary": "Stratégie en temps réel sur le front de la Grande Guerre : tu gères les régiments et leurs corvées, secteur par secteur, tranchée par tranchée, du jour à la nuit.",
       "description": "Stratégie en temps réel sur le front de la Grande Guerre : tu gères les régiments et leurs corvées, secteur par secteur, tranchée par tranchée, du jour à la nuit.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/cyclop/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://supershivas.github.io/cyclop/",
@@ -320,7 +321,7 @@
       ],
       "summary": "Une nuit, trois visiteurs : allume la bougie, garde-en deux, froisse ou écris. Jeu narratif avec sauvegarde et nouvelles nuits.",
       "description": "Une nuit, trois visiteurs : allume la bougie, garde-en deux, froisse ou écris. Jeu narratif avec sauvegarde et nouvelles nuits.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/hapax/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://supershivas.github.io/hapax/",
@@ -348,7 +349,7 @@
       ],
       "summary": "Escalade le K2 (8 611 m) en pixel art, seul face à la paroi. Mobile et bureau.",
       "description": "Escalade le K2 (8 611 m) en pixel art, seul face à la paroi. Mobile et bureau.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/k2/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://supershivas.github.io/k2/",
@@ -375,7 +376,7 @@
       ],
       "summary": "Quatre cavaliers mènent la ronde sur le front d'une Grande Guerre qui n'en finit pas. Tactique au tour par tour.",
       "description": "Quatre cavaliers mènent la ronde sur le front d'une Grande Guerre qui n'en finit pas. Tactique au tour par tour.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/4-cavapo/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://supershivas.github.io/4-cavapo/",
@@ -401,7 +402,7 @@
       ],
       "summary": "Jeu de course.",
       "description": "Jeu de course.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/crazyracing/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://supershivas.github.io/crazyracing/",
@@ -425,7 +426,7 @@
       "tags": [],
       "summary": "Jeu navigateur Supershivas.",
       "description": "Jeu navigateur Supershivas.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/kingvi/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://supershivas.github.io/kingvi/",
@@ -449,7 +450,7 @@
       "tags": [],
       "summary": "Jeu navigateur Supershivas.",
       "description": "Jeu navigateur Supershivas.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/pierre-et-les-rats/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://supershivas.github.io/pierre-et-les-rats/",
@@ -477,7 +478,7 @@
       ],
       "summary": "Jeu d'usine en pixel art, pour mobile : trace le convoyeur de la machine jaune à la machine verte.",
       "description": "Jeu d'usine en pixel art, pour mobile : trace le convoyeur de la machine jaune à la machine verte.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/factokid/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://supershivas.github.io/factokid/",
@@ -506,7 +507,7 @@
       ],
       "summary": "Roguelite naval au tour par tour dans les Caraïbes des boucaniers (1640-1697) : on ne coule pas les navires, on les prend.",
       "description": "Roguelite naval au tour par tour dans les Caraïbes des boucaniers (1640-1697) : on ne coule pas les navires, on les prend.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/frere-de-la-cote/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://supershivas.github.io/frere-de-la-cote/",
@@ -532,7 +533,7 @@
       ],
       "summary": "Bataille spatiale.",
       "description": "Bataille spatiale.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/space-crusader/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://supershivas.github.io/space-crusader/",
@@ -587,7 +588,7 @@
       ],
       "summary": "Le poste de travail éditorial de la collection Les Carnets : 1 347 croquis, 51 carnets, 13 volumes.",
       "description": "Le poste de travail éditorial de la collection Les Carnets : 1 347 croquis, 51 carnets, 13 volumes.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/les-carnets-editions/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://supershivas.github.io/les-carnets-editions/",
@@ -613,7 +614,7 @@
       ],
       "summary": "Le site de la collection : croquis de voyage de Jérôme Agostini, 2002-2019.",
       "description": "Le site de la collection : croquis de voyage de Jérôme Agostini, 2002-2019.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/les-carnets-wp/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://lescarnets.fr",
@@ -639,7 +640,7 @@
       ],
       "summary": "Conventions communes des jeux Supershivas et générateur de prompt pour un nouveau jeu.",
       "description": "Conventions communes des jeux Supershivas et générateur de prompt pour un nouveau jeu.",
-      "thumbnail": null,
+      "thumbnail": "assets/projects/game-system/thumb.jpg",
       "screenshots": [],
       "links": {
         "demo": "https://supershivas.github.io/game-system/",
@@ -674,5 +675,9 @@
       "featured": false,
       "visible": false
     }
+  ],
+  "ignoredRepos": [
+    "hub",
+    "design-system"
   ]
 }

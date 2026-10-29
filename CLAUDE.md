@@ -14,7 +14,7 @@ Vanilla JS statique (modules ES, sans build), GitHub Pages via GitHub Actions. A
 
 ## Structure
 
-`data/projects.json` (données), `js/app.js` (rendu), `css/style.css`, `scripts/new-project.mjs` (ajout et validation), `docs/AJOUTER-UN-PROJET.md`. Un ajout de projet est un changement de contenu : pas de bump de version.
+`data/projects.json` (données), `js/app.js` (rendu), `css/style.css`, `scripts/new-project.mjs` (ajout et validation), `docs/AJOUTER-UN-PROJET.md`, `scripts/sync-repos.mjs` + `scripts/screenshot.mjs` (ajout automatique des nouveaux dépôts, workflow `sync-repos.yml`). Un ajout de projet est un changement de contenu : pas de bump de version.
 
 ## Exceptions aux conventions
 
