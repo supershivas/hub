@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Projet du hub",
+  "type": "object",
+  "required": ["slug", "title", "type", "tech", "summary"],
+  "properties": {
+    "slug": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$", "description": "Identifiant unique, utilisé dans l'URL #/p/<slug>." },
+    "title": { "type": "string" },
+    "type": { "enum": ["app", "jeu", "site"] },
+    "tech": { "type": "string", "description": "Techno principale, utilisée pour le filtre." },
+    "stack": { "type": "array", "items": { "type": "string" }, "description": "Stack complète, affichée sur la fiche." },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "summary": { "type": "string", "description": "Une phrase, affichée sur la carte." },
+    "description": { "type": "string", "description": "Texte de la fiche. Paragraphes séparés par une ligne vide ; lignes commençant par « - » = liste." },
+    "thumbnail": { "type": ["string", "null"], "description": "Chemin relatif, ex. assets/projects/<slug>/thumb.png (16:10 conseillé). null = initiale." },
+    "screenshots": { "type": "array", "items": { "type": "string" } },
+    "links": {
+      "type": "object",
+      "properties": {
+        "demo": { "type": ["string", "null"] },
+        "repo": { "type": ["string", "null"] },
+        "article": { "type": ["string", "null"] },
+        "sources": { "type": "array", "items": { "type": "object", "required": ["label", "url"], "properties": { "label": { "type": "string" }, "url": { "type": "string" } } } }
+      }
+    },
+    "status": { "enum": ["active", "archive", "prototype"] },
+    "year": { "type": "integer" },
+    "featured": { "type": "boolean" },
+    "visible": { "type": "boolean", "description": "false = masqué sur le site sans être supprimé." }
+  }
+}

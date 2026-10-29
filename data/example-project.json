@@ -1,0 +1,37 @@
+{
+  "slug": "mon-projet",
+  "title": "Mon projet exemple",
+  "type": "app",
+  "tech": "React",
+  "stack": [
+    "React",
+    "Vite",
+    "Supabase",
+    "Vercel"
+  ],
+  "tags": [
+    "exemple",
+    "productivité"
+  ],
+  "summary": "Une phrase pour la carte.",
+  "description": "Premier paragraphe de la fiche.\n\nDeuxième paragraphe.\n\n- Une fonctionnalité\n- Une autre fonctionnalité",
+  "thumbnail": "assets/projects/exemple/thumb.svg",
+  "screenshots": [
+    "assets/projects/exemple/1.svg"
+  ],
+  "links": {
+    "demo": "https://exemple.vercel.app",
+    "repo": "https://github.com/supershivas/exemple",
+    "article": "https://exemple.fr/post-mortem",
+    "sources": [
+      {
+        "label": "Maquette Figma",
+        "url": "https://exemple.fr/maquette"
+      }
+    ]
+  },
+  "status": "active",
+  "featured": false,
+  "visible": true,
+  "year": 2026
+}

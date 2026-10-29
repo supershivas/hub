@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Supershivas — apps, jeux et sites</title>
+  <meta name="description" content="Le hub central des apps, jeux et sites de Supershivas.">
+  <meta name="theme-color" content="#1C1C1E">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.11.0/dist/tabler-icons.min.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="app-header safe-top">
+    <a class="app-name" href="#/" id="home-link">Supershivas</a>
+    <nav class="app-nav" aria-label="Navigation">
+      <a href="#/" data-nav="home">Projets</a>
+      <a href="#/liens" data-nav="liens">Liens</a>
+    </nav>
+    <button class="icon-btn" id="settings-btn" type="button" aria-label="Réglages"><i class="ti ti-settings"></i></button>
+  </header>
+
+  <main id="view" class="safe-bottom" tabindex="-1"></main>
+
+  <dialog id="settings" aria-label="Réglages">
+    <div class="modal-box">
+      <div class="modal-head">
+        <h2>Réglages</h2>
+        <button class="icon-btn" type="button" id="settings-close" aria-label="Fermer"><i class="ti ti-x"></i></button>
+      </div>
+      <section>
+        <h3>Dernières versions</h3>
+        <ul id="changelog" class="changelog"></ul>
+      </section>
+      <section>
+        <h3>Données</h3>
+        <button class="btn" type="button" id="export-btn"><i class="ti ti-download"></i> Exporter projects.json</button>
+      </section>
+      <p class="version" id="version">v…</p>
+    </div>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
