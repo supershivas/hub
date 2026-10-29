@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "date": "2026-10-29",
-  "changes": ["Première version du hub : grille de projets, fiches, filtres, recherche et page Liens"]
+  "changes": ["Ajoute les jeux Cyclopéen, HAPAX et Mission Secrète"]
 }

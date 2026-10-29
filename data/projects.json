@@ -282,15 +282,18 @@
     {
       "slug": "cyclop",
       "title": "Cyclopéen",
-      "type": "app",
+      "type": "jeu",
       "tech": "Vanilla JS",
       "stack": [
         "Vanilla JS",
         "GitHub Pages"
       ],
-      "tags": [],
-      "summary": "À compléter.",
-      "description": "À compléter.",
+      "tags": [
+        "stratégie",
+        "Grande Guerre"
+      ],
+      "summary": "Stratégie en temps réel sur le front de la Grande Guerre : tu gères les régiments et leurs corvées, secteur par secteur, tranchée par tranchée, du jour à la nuit.",
+      "description": "Stratégie en temps réel sur le front de la Grande Guerre : tu gères les régiments et leurs corvées, secteur par secteur, tranchée par tranchée, du jour à la nuit.",
       "thumbnail": null,
       "screenshots": [],
       "links": {
@@ -301,20 +304,22 @@
       },
       "status": "active",
       "featured": false,
-      "visible": false
+      "visible": true
     },
     {
       "slug": "hapax",
       "title": "HAPAX",
-      "type": "app",
+      "type": "jeu",
       "tech": "Vanilla JS",
       "stack": [
         "Vanilla JS",
         "GitHub Pages"
       ],
-      "tags": [],
-      "summary": "À compléter.",
-      "description": "À compléter.",
+      "tags": [
+        "narratif"
+      ],
+      "summary": "Une nuit, trois visiteurs : allume la bougie, garde-en deux, froisse ou écris. Jeu narratif avec sauvegarde et nouvelles nuits.",
+      "description": "Une nuit, trois visiteurs : allume la bougie, garde-en deux, froisse ou écris. Jeu narratif avec sauvegarde et nouvelles nuits.",
       "thumbnail": null,
       "screenshots": [],
       "links": {
@@ -325,7 +330,7 @@
       },
       "status": "active",
       "featured": false,
-      "visible": false
+      "visible": true
     },
     {
       "slug": "k2",
@@ -549,9 +554,12 @@
         "PWA",
         "Vercel"
       ],
-      "tags": [],
-      "summary": "Application d'anniversaire « agent secret » avec backoffice de configuration.",
-      "description": "Application d'anniversaire « agent secret » avec backoffice de configuration.",
+      "tags": [
+        "anniversaire",
+        "PWA"
+      ],
+      "summary": "Jeu d'anniversaire « agent secret » pour enfant, avec un backoffice pour configurer les missions.",
+      "description": "Jeu d'anniversaire « agent secret » pour enfant, avec un backoffice pour configurer les missions.",
       "thumbnail": null,
       "screenshots": [],
       "links": {
@@ -562,7 +570,7 @@
       },
       "status": "active",
       "featured": false,
-      "visible": false
+      "visible": true
     },
     {
       "slug": "les-carnets-editions",
