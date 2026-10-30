@@ -674,6 +674,29 @@
       "status": "active",
       "featured": false,
       "visible": false
+    },
+    {
+      "slug": "gsc-tools",
+      "title": "GSC tools",
+      "type": "app",
+      "tech": "Vanilla JS",
+      "stack": [
+        "Vanilla JS"
+      ],
+      "tags": [],
+      "summary": "À compléter.",
+      "description": "À compléter.",
+      "thumbnail": "assets/projects/gsc-tools/thumb.jpg",
+      "screenshots": [],
+      "links": {
+        "demo": "https://supershivas.github.io/gsc-tools/",
+        "repo": "https://github.com/supershivas/gsc-tools",
+        "article": null,
+        "sources": []
+      },
+      "status": "active",
+      "featured": false,
+      "visible": true
     }
   ],
   "ignoredRepos": [
