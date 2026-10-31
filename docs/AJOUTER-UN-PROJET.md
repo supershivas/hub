@@ -28,13 +28,16 @@ Copie le bloc de `data/example-project.json` dans le tableau `projects` de `data
 | `summary` | oui | Une phrase, sur la carte |
 | `stack` | non | Stack complète, sur la fiche |
 | `tags` | non | Mots-clés (cherchables) |
-| `description` | non | Texte de la fiche : paragraphes séparés par une ligne vide, lignes `- ` = liste |
+| `description` | non | Texte de la fiche, en plus du résumé (ne le répète pas) : paragraphes séparés par une ligne vide, lignes `- ` = liste |
 | `thumbnail` | non | Miniature, ex. `assets/projects/<slug>/thumb.png` (16:10). Absente : initiale du titre |
 | `screenshots` | non | Liste de chemins d'images |
 | `links.demo` / `links.repo` / `links.article` | non | Démo en ligne, dépôt, post-mortem. `null` masque le bouton |
 | `links.sources` | non | Liens libres `{ "label": "…", "url": "…" }` |
 | `status` | non | `active`, `archive`, `prototype` |
 | `year` | non | Année |
+| `tier` | non | `primaire` (usage quotidien) ou `secondaire`. Les primaires passent devant dans le tri par étoiles |
+| `stars` | non | Importance de 1 à 5 : à régler à la main, 1 par défaut pour un nouveau dépôt |
+| `version`, `updated`, `lastChanges`, `roadmap` | non | Remplis automatiquement toutes les 6 h depuis `version.json`, `CHANGELOG.md` et `ROADMAP.md` du dépôt (racine, `public/` ou `docs/`). Ne pas les éditer à la main |
 | `featured` | non | Réservé à un usage futur (mise en avant) |
 | `visible` | non | `false` = masqué sans suppression |
 

@@ -47,6 +47,7 @@ node scripts/new-project.mjs mon-depot --type jeu --title "Mon jeu" --tech "Vani
 
 Le workflow `.github/workflows/sync-repos.yml` tourne toutes les 6 heures (et à la demande : onglet Actions → « Synchroniser les projets » → Run workflow). Il ajoute à `data/projects.json` chaque dépôt public du compte absent du fichier, avec titre et résumé tirés de la démo ou de la description GitHub, puis capture la démo et redéploie le site.
 
+- Chaque passage rafraîchit aussi la version, la date, les dernières modifications et la roadmap de chaque projet (`scripts/enrich-projects.mjs`, à partir de `version.json`, `CHANGELOG.md` et `ROADMAP.md` des dépôts).
 - Pour que le type soit juste, donne au dépôt le topic GitHub `game` ou `jeu` (jeux) ou `site` ; sans topic, c'est une app.
 - Pour ne jamais lister un dépôt : ajoute son nom à `ignoredRepos` dans `data/projects.json`. Pour le masquer : `visible: false`.
 - Les entrées créées automatiquement sont à relire : complète le résumé et la description à ta guise.

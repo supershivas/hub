@@ -10,6 +10,7 @@ import { fileURLToPath } from 'node:url';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const file = join(root, 'data/projects.json');
 const TYPES = ['app', 'jeu', 'site'];
+const TIERS = ['primaire', 'secondaire'];
 const STATUS = ['active', 'archive', 'prototype'];
 
 function validate(db) {
@@ -21,6 +22,9 @@ function validate(db) {
     for (const k of ['slug', 'title', 'type', 'tech', 'summary']) if (!p[k] || typeof p[k] !== 'string') errors.push(`${at} : « ${k} » manquant`);
     if (p.type && !TYPES.includes(p.type)) errors.push(`${at} : type « ${p.type} » invalide (${TYPES.join(', ')})`);
     if (p.status && !STATUS.includes(p.status)) errors.push(`${at} : status « ${p.status} » invalide`);
+    if (p.tier && !TIERS.includes(p.tier)) errors.push(`${at} : tier « ${p.tier} » invalide (${TIERS.join(', ')})`);
+    if (p.stars !== undefined && !(Number.isInteger(p.stars) && p.stars >= 1 && p.stars <= 5)) errors.push(`${at} : stars doit être un entier de 1 à 5`);
+    if (p.updated && !/^\d{4}-\d{2}-\d{2}$/.test(p.updated)) errors.push(`${at} : updated doit être au format AAAA-MM-JJ`);
     if (p.slug && !/^[A-Za-z0-9][A-Za-z0-9_-]*$/.test(p.slug)) errors.push(`${at} : slug invalide`);
     if (slugs.has(p.slug)) errors.push(`${at} : slug en double`);
     slugs.add(p.slug);
@@ -52,10 +56,9 @@ const project = {
   slug, title, type, tech,
   stack: [tech], tags: [],
   summary: opt('summary') || 'À compléter.',
-  description: opt('summary') || 'À compléter.',
   thumbnail: null, screenshots: [],
   links: { demo: opt('demo') ?? `https://${owner}.github.io/${slug}/`, repo: opt('repo') ?? `https://github.com/${owner}/${slug}`, article: null, sources: [] },
-  status: 'active', featured: false, visible: true,
+  status: 'active', tier: 'secondaire', stars: 1, featured: false, visible: true,
 };
 if (db.projects.some(p => p.slug === slug)) { console.error(`Le slug « ${slug} » existe déjà.`); process.exit(1); }
 db.projects.push(project);

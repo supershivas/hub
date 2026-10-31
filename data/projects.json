@@ -54,7 +54,6 @@
         "notes"
       ],
       "summary": "Éditeur de notes maison, synchronisé entre appareils.",
-      "description": "Éditeur de notes maison, synchronisé entre appareils.",
       "thumbnail": "assets/projects/idee/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -65,7 +64,15 @@
       },
       "status": "active",
       "featured": true,
-      "visible": true
+      "visible": true,
+      "stars": 5,
+      "tier": "primaire",
+      "version": "1.40.1",
+      "updated": "2026-10-13",
+      "lastChanges": [
+        "Export d'une sélection : on coche les entrées du journal une à une (avec recherche et « Tout cocher »)",
+        "Chaque page indique combien de sous-pages elle emporte ; celles-ci sont cochées d'office"
+      ]
     },
     {
       "slug": "source",
@@ -79,7 +86,6 @@
       ],
       "tags": [],
       "summary": "Application web Next.js hébergée sur Vercel.",
-      "description": "Application web Next.js hébergée sur Vercel.",
       "thumbnail": "assets/projects/source/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -90,7 +96,14 @@
       },
       "status": "active",
       "featured": true,
-      "visible": true
+      "visible": true,
+      "stars": 5,
+      "tier": "primaire",
+      "version": "1.12.0",
+      "updated": "2026-10-06",
+      "lastChanges": [
+        "La date de chaque note est modifiable d'un clic (l'heure est conservée) ; la note et son jalon sur la frise se déplacent, avec un lien « Annuler »"
+      ]
     },
     {
       "slug": "projetV",
@@ -107,7 +120,6 @@
         "comparateur"
       ],
       "summary": "Comparateur de voitures, entièrement statique : les données vivent dans un JSON versionné.",
-      "description": "Comparateur de voitures, entièrement statique : les données vivent dans un JSON versionné.",
       "thumbnail": "assets/projects/projetV/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -118,7 +130,14 @@
       },
       "status": "active",
       "featured": false,
-      "visible": true
+      "visible": true,
+      "stars": 3,
+      "tier": "secondaire",
+      "version": "1.0.1",
+      "updated": "2026-09-30",
+      "lastChanges": [
+        "L'icône de l'app s'affiche aussi dans les navigateurs et les liens qui demandent favicon.ico"
+      ]
     },
     {
       "slug": "stockportfolio",
@@ -134,7 +153,6 @@
         "finance"
       ],
       "summary": "Application de suivi de portefeuille d'actions.",
-      "description": "Application de suivi de portefeuille d'actions.",
       "thumbnail": "assets/projects/stockportfolio/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -145,7 +163,14 @@
       },
       "status": "active",
       "featured": false,
-      "visible": true
+      "visible": true,
+      "stars": 2,
+      "tier": "secondaire",
+      "version": "1.0.1",
+      "updated": "2026-09-30",
+      "lastChanges": [
+        "L'icône de l'app s'affiche aussi dans les navigateurs et les liens qui demandent favicon.ico"
+      ]
     },
     {
       "slug": "studio-crea",
@@ -158,7 +183,6 @@
       ],
       "tags": [],
       "summary": "Un petit studio de création dans le navigateur.",
-      "description": "Un petit studio de création dans le navigateur.",
       "thumbnail": "assets/projects/studio-crea/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -169,7 +193,14 @@
       },
       "status": "active",
       "featured": false,
-      "visible": true
+      "visible": true,
+      "stars": 3,
+      "tier": "secondaire",
+      "version": "1.10.1",
+      "updated": "2026-09-30",
+      "lastChanges": [
+        "L'icône de l'app s'affiche aussi dans les navigateurs et les liens qui demandent favicon.ico"
+      ]
     },
     {
       "slug": "elec-aiti",
@@ -184,7 +215,6 @@
         "schémas"
       ],
       "summary": "Dessine et édite des schémas électriques dans le navigateur.",
-      "description": "Dessine et édite des schémas électriques dans le navigateur.",
       "thumbnail": "assets/projects/elec-aiti/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -195,7 +225,14 @@
       },
       "status": "active",
       "featured": false,
-      "visible": true
+      "visible": true,
+      "stars": 3,
+      "tier": "secondaire",
+      "version": "1.0.1",
+      "updated": "2026-09-30",
+      "lastChanges": [
+        "L'icône de l'app s'affiche aussi dans les navigateurs et les liens qui demandent favicon.ico"
+      ]
     },
     {
       "slug": "roomplanner",
@@ -212,7 +249,6 @@
         "3D"
       ],
       "summary": "Éditeur de plans de pièce en 2D avec vue 3D et rendu réaliste de la lumière.",
-      "description": "Éditeur de plans de pièce en 2D avec vue 3D et rendu réaliste de la lumière.",
       "thumbnail": "assets/projects/roomplanner/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -223,7 +259,16 @@
       },
       "status": "active",
       "featured": false,
-      "visible": true
+      "visible": true,
+      "stars": 3,
+      "tier": "secondaire",
+      "version": "1.5.0",
+      "updated": "2026-10-26",
+      "lastChanges": [
+        "Le panneau de droite n'affiche plus que les propriétés de la sélection (objet, colonne, lumière ou pièce) ; sans sélection, le plan prend toute la largeur",
+        "Barre d'outils : « Ajouter » (catalogue avec icônes), « Pièce » et « Éléments » (liste) ; réglages du rendu dans la vue 3D ; menu Aide avec les raccourcis",
+        "Couleurs en palette flottante, champs sur trois colonnes, options rares repliées ; sur mobile, feuille en bas de l'écran"
+      ]
     },
     {
       "slug": "pixel-studio",
@@ -240,7 +285,6 @@
         "PWA"
       ],
       "summary": "Éditeur de pixel art dans le navigateur, installable et utilisable hors ligne.",
-      "description": "Éditeur de pixel art dans le navigateur, installable et utilisable hors ligne.",
       "thumbnail": "assets/projects/pixel-studio/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -251,7 +295,17 @@
       },
       "status": "active",
       "featured": false,
-      "visible": true
+      "visible": true,
+      "stars": 3,
+      "tier": "secondaire",
+      "roadmap": [
+        "1. Bibliothèque de pinceaux : créer ou importer, pinceau tiré d'une sélection (P)",
+        "2. Opacité et flux du pinceau, séparés de la taille (P, PS)",
+        "5. Courbe de pression réglable pour l'Apple Pencil (P)",
+        "6. Inclinaison du Pencil pour ombrer à plat (P)",
+        "7. Estompe / doigt adapté aux pixels (P, PS)",
+        "8. Mode de fusion propre à chaque pinceau (PS)"
+      ]
     },
     {
       "slug": "fusain",
@@ -267,7 +321,6 @@
         "BD"
       ],
       "summary": "Un atelier de dessin tactile, à la trame, pour la bande dessinée.",
-      "description": "Un atelier de dessin tactile, à la trame, pour la bande dessinée.",
       "thumbnail": "assets/projects/fusain/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -278,7 +331,14 @@
       },
       "status": "active",
       "featured": false,
-      "visible": true
+      "visible": true,
+      "stars": 3,
+      "tier": "secondaire",
+      "version": "1.28.0",
+      "updated": "2026-10-31",
+      "lastChanges": [
+        "Bulles : on peut aligner le texte à gauche, au centre ou à droite, et en haut, au milieu ou en bas (onglet Texte)"
+      ]
     },
     {
       "slug": "cyclop",
@@ -294,7 +354,6 @@
         "Grande Guerre"
       ],
       "summary": "Stratégie en temps réel sur le front de la Grande Guerre : tu gères les régiments et leurs corvées, secteur par secteur, tranchée par tranchée, du jour à la nuit.",
-      "description": "Stratégie en temps réel sur le front de la Grande Guerre : tu gères les régiments et leurs corvées, secteur par secteur, tranchée par tranchée, du jour à la nuit.",
       "thumbnail": "assets/projects/cyclop/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -305,7 +364,23 @@
       },
       "status": "active",
       "featured": false,
-      "visible": true
+      "visible": true,
+      "stars": 3,
+      "tier": "secondaire",
+      "version": "0.99.5",
+      "updated": "2026-10-31",
+      "lastChanges": [
+        "Le temps arrêté fige tout le dessin (nuages, pluie, fumée) et ternit les couleurs ; la pluie et la neige tombent aussi dans le ciel",
+        "Les bâtiments du camp reposent sur un socle plat qui couvre le relief ; l'aérodrome garde le sol du terrain, seule la piste (glaise, lignes blanches) a sa couleur et ne clignote plus"
+      ],
+      "roadmap": [
+        "**Arbres** : animation de chute sous un bombardement ; feuillage ellipsoïdal (rond) ; même aspect à tous les zooms (on peut simplifier les formes, pas en retirer le nombre).",
+        "**Aérodrome** : le sol du camp est le sol du terrain ; seule la piste a sa couleur (et quelques lignes blanches) ; la piste scintille (sans doute deux faces à la même hauteur : à corriger) ; les avions décollent de l'aérodrome avant leur attaque.",
+        "**Chars** : le char part du parc des chars ; le parc affiche le nombre total, un bouton vers les chars déployés et leur état (un clic centre la vue sur le char). Fenêtre d'ordres du char : décollée des boutons d'artillerie, boutons au design system, ordre en cours, vie du char, comprendre la 2e barre (bleue : cooldown du canon ? elle ne bouge pas : la faire vivre ou la retirer) ; l'artillerie arrête les chars trop difficilement (rééquilibrer par mesure).",
+        "**Fumée** : ellipses (plus de cubes), volutes plus réalistes.",
+        "**Météo** : la pluie est coupée au début du ciel (étrange) ; terre sèche → boue en transition douce et organique ; une pluie continue ne doit plus aplanir les cratères en lacs (l'eau s'y accumule sans raboter le relief).",
+        "**Carte** (Jérôme, « les deux ») : un clic sur C2 cadre la vue 3D sur le seul secteur C2 **et** la carte n'affiche plus que C2 en gros plan, avec un retour à la vue d'ensemble."
+      ]
     },
     {
       "slug": "hapax",
@@ -320,7 +395,6 @@
         "narratif"
       ],
       "summary": "Une nuit, trois visiteurs : allume la bougie, garde-en deux, froisse ou écris. Jeu narratif avec sauvegarde et nouvelles nuits.",
-      "description": "Une nuit, trois visiteurs : allume la bougie, garde-en deux, froisse ou écris. Jeu narratif avec sauvegarde et nouvelles nuits.",
       "thumbnail": "assets/projects/hapax/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -331,7 +405,19 @@
       },
       "status": "active",
       "featured": false,
-      "visible": true
+      "visible": true,
+      "stars": 3,
+      "tier": "secondaire",
+      "version": "0.1.0",
+      "updated": "2026-10-14",
+      "lastChanges": [
+        "Dix heures du soir : la première heure de la nuit se joue",
+        "Choisis deux visiteurs, écris des fragments avant que la bougie s'éteigne",
+        "Un degré écrit pour la première fois de la nuit (le hapax) compte double"
+      ],
+      "roadmap": [
+        "Validation de Jérôme en jouant sur téléphone → 1.0.0 sur sa décision"
+      ]
     },
     {
       "slug": "k2",
@@ -348,7 +434,6 @@
         "escalade"
       ],
       "summary": "Escalade le K2 (8 611 m) en pixel art, seul face à la paroi. Mobile et bureau.",
-      "description": "Escalade le K2 (8 611 m) en pixel art, seul face à la paroi. Mobile et bureau.",
       "thumbnail": "assets/projects/k2/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -359,7 +444,16 @@
       },
       "status": "active",
       "featured": true,
-      "visible": true
+      "visible": true,
+      "stars": 4,
+      "tier": "primaire",
+      "version": "1.1.0",
+      "updated": "2026-10-05",
+      "lastChanges": [
+        "Montagne vue de face, héros plus petit, palette Game Boy avec un rose fluo",
+        "Ressources à ramasser sur la paroi, blocs, verglas et chutes de pierres à esquiver",
+        "Radio météo : prévisions du lendemain sur un écran Game Boy"
+      ]
     },
     {
       "slug": "4-cavapo",
@@ -375,7 +469,6 @@
         "tour par tour"
       ],
       "summary": "Quatre cavaliers mènent la ronde sur le front d'une Grande Guerre qui n'en finit pas. Tactique au tour par tour.",
-      "description": "Quatre cavaliers mènent la ronde sur le front d'une Grande Guerre qui n'en finit pas. Tactique au tour par tour.",
       "thumbnail": "assets/projects/4-cavapo/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -386,7 +479,19 @@
       },
       "status": "active",
       "featured": false,
-      "visible": true
+      "visible": true,
+      "stars": 3,
+      "tier": "secondaire",
+      "version": "0.1.0",
+      "updated": "2026-10-14",
+      "lastChanges": [
+        "Les quatre cavaliers mènent la danse sur le front, au tour par tour",
+        "Les âmes fauchées suivent la Mort et forment la ronde",
+        "Les tableaux s'enchaînent tant que la ronde prend son quota"
+      ],
+      "roadmap": [
+        "Le critère de validation, mesuré par un joueur : une partie dure"
+      ]
     },
     {
       "slug": "crazyracing",
@@ -401,7 +506,6 @@
         "course"
       ],
       "summary": "Jeu de course.",
-      "description": "Jeu de course.",
       "thumbnail": "assets/projects/crazyracing/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -412,7 +516,20 @@
       },
       "status": "active",
       "featured": false,
-      "visible": true
+      "visible": true,
+      "stars": 1,
+      "tier": "secondaire",
+      "version": "0.4.0",
+      "updated": "2026-10-26",
+      "lastChanges": [
+        "Le jeu passe en 3D (three.js) : lumière dynamique (soleil et ombres, lampadaires, phares, pluie, bloom), jour, soir et nuit",
+        "On ne conduit plus : les voitures roulent seules sur trois lignes ; on choisit sa ligne, l'aspiration, les pneus, l'arrêt au stand, les bonus",
+        "L'aspiration (sillage) donne de la vitesse derrière une voiture ; l'air sale coûte de l'adhérence dans les virages",
+        "Seuls les événements sortent de piste : tête-à-queue, crevaison, débris posés sur une ligne"
+      ],
+      "roadmap": [
+        "Le critère de validation, mesuré (voir DESIGN.md)"
+      ]
     },
     {
       "slug": "kingvi",
@@ -425,7 +542,6 @@
       ],
       "tags": [],
       "summary": "Jeu navigateur Supershivas.",
-      "description": "Jeu navigateur Supershivas.",
       "thumbnail": "assets/projects/kingvi/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -436,7 +552,16 @@
       },
       "status": "active",
       "featured": false,
-      "visible": true
+      "visible": true,
+      "stars": 1,
+      "tier": "secondaire",
+      "version": "1.70.2",
+      "updated": "2026-10-08",
+      "lastChanges": [
+        "Éditeur : le mode « Agrandir » reste actif d'un « + » au suivant (l'éditeur se rouvre agrandi, `keepGrowing`) ; il ne s'éteint qu'en recliquant sur « Agrandir »",
+        "La terre nue du bas (grève, landes) est nettement plus claire (`BARE_DARK` 0,3 au lieu de 0,86) : le viking, bleu nuit, s'y lit ; la neige profonde (`snowDepth`) ne vient plus que là où la neige tient (le viking ne s'enfonce plus sur la grève)",
+        "Le grand sapin du pont garde un rond de neige à son pied, visible de loin ; la phrase de Kári au bord du ravin le désigne"
+      ]
     },
     {
       "slug": "pierre-et-les-rats",
@@ -449,7 +574,6 @@
       ],
       "tags": [],
       "summary": "Jeu navigateur Supershivas.",
-      "description": "Jeu navigateur Supershivas.",
       "thumbnail": "assets/projects/pierre-et-les-rats/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -460,7 +584,16 @@
       },
       "status": "active",
       "featured": false,
-      "visible": true
+      "visible": true,
+      "stars": 1,
+      "tier": "secondaire",
+      "version": "2.3.0",
+      "updated": "2026-10-12",
+      "lastChanges": [
+        "Une carte vraiment organique : la grille de la ville est un maillage de quadrilatères irréguliers (comme dans un plan relaxé), la Seine serpente sur toute la carte et la courbe entraîne les rues et les îlots",
+        "Les berges ondulent, les avenues se décalent de quelques cases d'un boulevard à l'autre (carrefours en baïonnette), de grands îlots sont coupés par des rues de biais ; deux boulevards ne sont plus que des rues de 2 cases",
+        "Les ponts restent des rectangles droits"
+      ]
     },
     {
       "slug": "factokid",
@@ -477,7 +610,6 @@
         "mobile"
       ],
       "summary": "Jeu d'usine en pixel art, pour mobile : trace le convoyeur de la machine jaune à la machine verte.",
-      "description": "Jeu d'usine en pixel art, pour mobile : trace le convoyeur de la machine jaune à la machine verte.",
       "thumbnail": "assets/projects/factokid/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -488,7 +620,9 @@
       },
       "status": "active",
       "featured": false,
-      "visible": true
+      "visible": true,
+      "stars": 3,
+      "tier": "secondaire"
     },
     {
       "slug": "frere-de-la-cote",
@@ -506,7 +640,6 @@
         "pixel art"
       ],
       "summary": "Roguelite naval au tour par tour dans les Caraïbes des boucaniers (1640-1697) : on ne coule pas les navires, on les prend.",
-      "description": "Roguelite naval au tour par tour dans les Caraïbes des boucaniers (1640-1697) : on ne coule pas les navires, on les prend.",
       "thumbnail": "assets/projects/frere-de-la-cote/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -517,7 +650,9 @@
       },
       "status": "active",
       "featured": true,
-      "visible": true
+      "visible": true,
+      "stars": 4,
+      "tier": "primaire"
     },
     {
       "slug": "space-crusader",
@@ -532,7 +667,6 @@
         "espace"
       ],
       "summary": "Bataille spatiale.",
-      "description": "Bataille spatiale.",
       "thumbnail": "assets/projects/space-crusader/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -543,7 +677,17 @@
       },
       "status": "active",
       "featured": false,
-      "visible": true
+      "visible": true,
+      "stars": 1,
+      "tier": "secondaire",
+      "roadmap": [
+        "**Correctif de portée (prérequis à tout le reste)** : en mission planète,",
+        "**Briefing de mission**, affiché avant la bannière d'engagement (au moment",
+        "**Jauge d'alerte** (état de mission, pas un chrono dur — cohérent avec la",
+        "Palier 1 : la garnison est produite plus vite/plus forte.",
+        "Palier 2 : les rangées arrière deviennent hostiles (réutilise le système",
+        "**Intentions visibles** (à la Slay the Spire) : une tourelle réveillée"
+      ]
     },
     {
       "slug": "Mission-secrete",
@@ -560,7 +704,6 @@
         "PWA"
       ],
       "summary": "Jeu d'anniversaire « agent secret » pour enfant, avec un backoffice pour configurer les missions.",
-      "description": "Jeu d'anniversaire « agent secret » pour enfant, avec un backoffice pour configurer les missions.",
       "thumbnail": null,
       "screenshots": [],
       "links": {
@@ -571,7 +714,9 @@
       },
       "status": "active",
       "featured": false,
-      "visible": true
+      "visible": true,
+      "stars": 3,
+      "tier": "secondaire"
     },
     {
       "slug": "les-carnets-editions",
@@ -587,7 +732,6 @@
         "croquis"
       ],
       "summary": "Le poste de travail éditorial de la collection Les Carnets : 1 347 croquis, 51 carnets, 13 volumes.",
-      "description": "Le poste de travail éditorial de la collection Les Carnets : 1 347 croquis, 51 carnets, 13 volumes.",
       "thumbnail": "assets/projects/les-carnets-editions/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -598,7 +742,9 @@
       },
       "status": "active",
       "featured": false,
-      "visible": true
+      "visible": true,
+      "stars": 3,
+      "tier": "secondaire"
     },
     {
       "slug": "les-carnets-wp",
@@ -613,7 +759,6 @@
         "édition"
       ],
       "summary": "Le site de la collection : croquis de voyage de Jérôme Agostini, 2002-2019.",
-      "description": "Le site de la collection : croquis de voyage de Jérôme Agostini, 2002-2019.",
       "thumbnail": "assets/projects/les-carnets-wp/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -624,7 +769,9 @@
       },
       "status": "active",
       "featured": false,
-      "visible": true
+      "visible": true,
+      "stars": 3,
+      "tier": "secondaire"
     },
     {
       "slug": "game-system",
@@ -639,7 +786,6 @@
         "outil"
       ],
       "summary": "Conventions communes des jeux Supershivas et générateur de prompt pour un nouveau jeu.",
-      "description": "Conventions communes des jeux Supershivas et générateur de prompt pour un nouveau jeu.",
       "thumbnail": "assets/projects/game-system/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -650,7 +796,9 @@
       },
       "status": "active",
       "featured": false,
-      "visible": false
+      "visible": false,
+      "stars": 2,
+      "tier": "secondaire"
     },
     {
       "slug": "La-fabrique",
@@ -662,7 +810,6 @@
       ],
       "tags": [],
       "summary": "À compléter.",
-      "description": "À compléter.",
       "thumbnail": null,
       "screenshots": [],
       "links": {
@@ -673,7 +820,9 @@
       },
       "status": "active",
       "featured": false,
-      "visible": false
+      "visible": false,
+      "stars": 1,
+      "tier": "secondaire"
     },
     {
       "slug": "gsc-tools",
@@ -685,7 +834,6 @@
       ],
       "tags": [],
       "summary": "À compléter.",
-      "description": "À compléter.",
       "thumbnail": "assets/projects/gsc-tools/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -696,7 +844,14 @@
       },
       "status": "active",
       "featured": false,
-      "visible": true
+      "visible": true,
+      "stars": 1,
+      "tier": "secondaire",
+      "version": "1.7.1",
+      "updated": "2026-10-30",
+      "lastChanges": [
+        "Barre au survol : le bouton « Éditer », redondant avec le panneau de droite, est retiré ; « Dataviz… » reste"
+      ]
     }
   ],
   "ignoredRepos": [

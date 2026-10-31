@@ -33,6 +33,10 @@ jobs:
           npm i --no-save playwright
           npx playwright install --with-deps chromium
           node scripts/screenshot.mjs
+      - name: Mettre à jour versions, modifications et roadmap
+        run: node scripts/enrich-projects.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Valider
         run: node scripts/new-project.mjs --validate
       - name: Publier
@@ -43,7 +47,7 @@ jobs:
           git diff --cached --quiet && { echo "Rien à publier."; exit 0; }
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Ajoute automatiquement les nouveaux projets"
+          git commit -m "Met à jour automatiquement les projets"
           git push
           # Un push fait avec GITHUB_TOKEN ne déclenche pas le déploiement : on le lance explicitement.
           gh workflow run pages.yml

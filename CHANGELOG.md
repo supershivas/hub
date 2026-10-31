@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0 — 2026-10-31
+- Ajoute le tri par étoiles (importance, primaires d'abord) et par date
+- Ajoute l'affichage en liste compacte, en plus des cartes
+- Ajoute la version, les dernières modifications et la roadmap sur les fiches quand elles existent
+- Corrige les descriptions répétées sur les fiches
+
 ## 1.1.0 — 2026-10-29
 - Ajoute les captures des projets sur les cartes et les fiches
 - Ajoute automatiquement les nouveaux dépôts au hub (toutes les 6 heures, avec capture de la démo)

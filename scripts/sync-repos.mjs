@@ -56,10 +56,10 @@ for (const r of await repos()) {
   const tech = guessTech(r);
   db.projects.push({
     slug: r.name, title: info.title || r.name, type: guessType(r.topics || []), tech,
-    stack: [tech], tags: r.topics || [], summary, description: summary,
+    stack: [tech], tags: r.topics || [], summary,
     thumbnail: null, screenshots: [],
     links: { demo, repo: r.html_url, article: null, sources: [] },
-    status: r.archived ? 'archive' : 'active', featured: false, visible: true,
+    status: r.archived ? 'archive' : 'active', tier: 'secondaire', stars: 1, featured: false, visible: true,
   });
   added.push(r.name);
 }

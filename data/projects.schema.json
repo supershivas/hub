@@ -25,6 +25,12 @@
     },
     "status": { "enum": ["active", "archive", "prototype"] },
     "year": { "type": "integer" },
+    "tier": { "enum": ["primaire", "secondaire"], "description": "App primaire (usage quotidien) ou secondaire. Classe en premier dans le tri par étoiles." },
+    "stars": { "type": "integer", "minimum": 1, "maximum": 5, "description": "Importance du projet, de 1 à 5 étoiles." },
+    "version": { "type": "string", "description": "Rempli par scripts/enrich-projects.mjs depuis version.json du dépôt." },
+    "updated": { "type": "string", "description": "AAAA-MM-JJ, date de la dernière version (rempli par enrich-projects)." },
+    "lastChanges": { "type": "array", "items": { "type": "string" }, "description": "Dernières modifications, tirées du CHANGELOG.md du dépôt." },
+    "roadmap": { "type": "array", "items": { "type": "string" }, "description": "Éléments à venir, tirés du ROADMAP.md du dépôt (puces non cochées)." },
     "featured": { "type": "boolean" },
     "visible": { "type": "boolean", "description": "false = masqué sur le site sans être supprimé." }
   }
