@@ -3,6 +3,7 @@ import { startUpdateCheck, loadVersion, loadChangelog, downloadJSON } from '../a
 const TYPES = { app: 'App', jeu: 'Jeu', site: 'Site' };
 const view = document.getElementById('view');
 let data = { site: {}, links: [], projects: [] };
+let publishedStars = {};
 
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const safeUrl = u => (/^(https?:|mailto:)/.test(u) ? u : '#');
@@ -14,6 +15,27 @@ const pref = (key, value) => {
   try { if (value === undefined) return localStorage.getItem(key); localStorage.setItem(key, value); } catch { /* stockage indisponible */ }
   return null;
 };
+
+/* ── Étoiles modifiables : enregistrées ici tout de suite, publiées sur le dépôt à la demande ── */
+const REPO_API = 'https://api.github.com/repos/supershivas/hub/contents/data/projects.json';
+const readJSON = (key, fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
+let starEdits = readJSON('hub-stars', {});
+const saveEdits = () => pref('hub-stars', JSON.stringify(starEdits));
+const pendingSlugs = () => Object.keys(starEdits);
+
+function applyStarEdits() {
+  // une retouche déjà publiée (valeur identique à celle du fichier) n'a plus lieu d'être
+  starEdits = Object.fromEntries(Object.entries(starEdits).filter(([slug, n]) => publishedStars[slug] !== undefined && publishedStars[slug] !== n));
+  saveEdits();
+  data.projects.forEach(p => { if (starEdits[p.slug]) p.stars = starEdits[p.slug]; });
+}
+
+function starPicker(p) {
+  const n = p.stars || 0;
+  return `<div><h3>Importance</h3><div class="star-picker" role="radiogroup" aria-label="Importance de ${esc(p.title)}">${
+    [1, 2, 3, 4, 5].map(i => `<button type="button" class="star-btn${i <= n ? ' on' : ''}" role="radio" aria-checked="${i === n}" data-star="${i}" aria-label="${i} étoile${i > 1 ? 's' : ''}"><i class="ti ti-star"></i></button>`).join('')}</div>
+    ${starEdits[p.slug] ? '<p class="hint">Modifié dans ce navigateur, à publier depuis les Réglages.</p>' : ''}</div>`;
+}
 
 function stars(p) {
   const n = Math.max(0, Math.min(5, Number(p.stars) || 0));
@@ -191,7 +213,7 @@ function renderDetail(slug) {
       <a class="back" href="#/"><i class="ti ti-arrow-left"></i> Projets</a>
       <h1>${esc(p.title)}</h1>
       <div class="meta"><span class="tag type">${esc(TYPES[p.type] || p.type)}</span><span class="tag">${esc(p.tech)}</span>
-        ${p.status ? `<span class="tag">${esc(statuses[p.status] || p.status)}</span>` : ''}${p.year ? `<span class="tag">${esc(p.year)}</span>` : ''}${p.tier ? `<span class="tag">${esc(TIERS[p.tier] || p.tier)}</span>` : ''}${stars(p)}</div>
+        ${p.status ? `<span class="tag">${esc(statuses[p.status] || p.status)}</span>` : ''}${p.year ? `<span class="tag">${esc(p.year)}</span>` : ''}${p.tier ? `<span class="tag">${esc(TIERS[p.tier] || p.tier)}</span>` : ''}</div>
       <p class="lead">${esc(p.summary)}</p>
       <div class="detail-grid">
         <div>
@@ -200,12 +222,22 @@ function renderDetail(slug) {
           ${releaseInfo(p)}
         </div>
         <aside class="panel">
+          ${starPicker(p)}
           <div class="link-list">${btn(l.demo, 'player-play', 'Voir la démo', true)}${btn(l.repo, 'brand-github', 'Code source')}${btn(l.article, 'article', 'Article / post-mortem')}${extra}</div>
           <div><h3>Stack</h3><div class="meta">${(p.stack || []).map(s => `<span class="tag">${esc(s)}</span>`).join('')}</div></div>
           ${(p.tags || []).length ? `<div><h3>Tags</h3><div class="meta">${p.tags.map(s => `<span class="tag">${esc(s)}</span>`).join('')}</div></div>` : ''}
         </aside>
       </div>
     </article>`;
+  view.querySelectorAll('[data-star]').forEach(b => b.addEventListener('click', () => {
+    const n = Number(b.dataset.star);
+    p.stars = n;
+    const published = publishedStars[p.slug];
+    if (n === published) delete starEdits[p.slug]; else starEdits[p.slug] = n;
+    saveEdits();
+    renderDetail(slug);
+    view.querySelector(`[data-star="${n}"]`)?.focus();
+  }));
 }
 
 /* ── Page Liens ── */
@@ -218,6 +250,46 @@ function renderLinks() {
 }
 
 /* ── Réglages ── */
+function refreshPublish() {
+  const n = pendingSlugs().length;
+  document.getElementById('publish-status').textContent = n ? `${n} étoile${n > 1 ? 's' : ''} à publier` : 'Rien à publier';
+  document.getElementById('publish-btn').disabled = !n;
+}
+
+const b64 = {
+  decode: s => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\s/g, '')), c => c.charCodeAt(0))),
+  encode: s => btoa(Array.from(new TextEncoder().encode(s), c => String.fromCharCode(c)).join('')),
+};
+
+async function publishStars() {
+  const status = document.getElementById('publish-status');
+  const token = document.getElementById('gh-token').value.trim();
+  if (!token) { status.textContent = 'Colle d’abord ton jeton GitHub.'; return; }
+  pref('hub-gh-token', token);
+  const headers = { Accept: 'application/vnd.github+json', Authorization: `Bearer ${token}` };
+  status.textContent = 'Publication…';
+  try {
+    // On repart du fichier publié (et non de la copie en mémoire) pour ne pas écraser une synchro automatique.
+    const res = await fetch(`${REPO_API}?ref=main`, { headers, cache: 'no-store' });
+    if (!res.ok) throw new Error(res.status === 401 || res.status === 403 ? 'jeton refusé' : `lecture ${res.status}`);
+    const file = await res.json();
+    const remote = JSON.parse(b64.decode(file.content));
+    const sent = { ...starEdits };
+    remote.projects.forEach(p => { if (sent[p.slug]) p.stars = sent[p.slug]; });
+    const put = await fetch(REPO_API, {
+      method: 'PUT', headers,
+      body: JSON.stringify({ message: 'Met à jour les étoiles des projets', content: b64.encode(JSON.stringify(remote, null, 2) + '\n'), sha: file.sha, branch: 'main' }),
+    });
+    if (!put.ok) throw new Error(put.status === 409 ? 'le fichier a changé, réessaie' : `écriture ${put.status}`);
+    Object.keys(sent).forEach(slug => { publishedStars[slug] = sent[slug]; delete starEdits[slug]; });
+    saveEdits();
+    status.textContent = 'Publié. Le site se met à jour dans une minute.';
+    document.getElementById('publish-btn').disabled = true;
+  } catch (e) {
+    status.textContent = `Échec : ${e.message}`;
+  }
+}
+
 async function setupSettings() {
   const dlg = document.getElementById('settings');
   document.getElementById('settings-btn').addEventListener('click', async () => {
@@ -225,8 +297,12 @@ async function setupSettings() {
     document.getElementById('version').textContent = version ? `v${version}` : 'v?';
     document.getElementById('changelog').innerHTML = entries.map(e =>
       `<li><b>v${esc(e.version)}</b> <small>${esc(e.date)}</small><ul>${e.changes.map(c => `<li>${esc(c)}</li>`).join('')}</ul></li>`).join('');
+    refreshPublish();
     dlg.showModal();
   });
+  const tokenInput = document.getElementById('gh-token');
+  tokenInput.value = pref('hub-gh-token') || '';
+  document.getElementById('publish-btn').addEventListener('click', publishStars);
   document.getElementById('settings-close').addEventListener('click', () => dlg.close());
   dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
   document.getElementById('export-btn').addEventListener('click', () => downloadJSON(data, 'projects.json'));
@@ -241,6 +317,8 @@ async function init() {
     view.innerHTML = '<p class="empty">Impossible de charger data/projects.json.</p>';
     return;
   }
+  publishedStars = Object.fromEntries(data.projects.map(p => [p.slug, p.stars]));
+  applyStarEdits();
   setupSettings();
   window.addEventListener('hashchange', () => { document.title = 'Supershivas — apps, jeux et sites'; render(); });
   render();

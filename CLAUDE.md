@@ -22,6 +22,8 @@ Mode sombre uniquement (défaut voulu), pas de PWA ni de Supabase (app secondair
 
 ## Pièges connus
 
+Les étoiles se modifient sur la fiche (clic) : enregistrées dans `localStorage` (`hub-stars`), publiées par un commit sur `main` via l'API GitHub avec un jeton fin gardé dans le navigateur (`hub-gh-token`, jamais exporté).
+
 Les champs `tier` (primaire/secondaire) et `stars` (1 à 5) se règlent à la main et pilotent le tri par étoiles ; `version`, `updated`, `lastChanges`, `roadmap` sont écrits par `enrich-projects.mjs` (ne pas les éditer). `description` ne doit pas répéter `summary`.
 
 Les projets avec `visible: false` sont masqués mais restent dans le fichier. Le lien repo de `les-carnets-wp` (privé) est volontairement absent.

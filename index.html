@@ -39,6 +39,13 @@
         <ul id="changelog" class="changelog"></ul>
       </section>
       <section>
+        <h3>Étoiles</h3>
+        <p class="hint" id="publish-status">Rien à publier</p>
+        <label class="field">Jeton GitHub (accès Contents en écriture sur le dépôt hub, gardé dans ce navigateur)
+          <input type="password" id="gh-token" autocomplete="off" placeholder="github_pat_…"></label>
+        <button class="btn" type="button" id="publish-btn" disabled><i class="ti ti-upload"></i> Publier les étoiles</button>
+      </section>
+      <section>
         <h3>Données</h3>
         <button class="btn" type="button" id="export-btn"><i class="ti ti-download"></i> Exporter projects.json</button>
       </section>

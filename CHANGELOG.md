@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.0 — 2026-10-31
+- Permet de modifier les étoiles d'un projet en cliquant dessus sur sa fiche
+- Ajoute dans les Réglages la publication des étoiles modifiées (jeton GitHub gardé dans le navigateur)
+
 ## 1.2.0 — 2026-10-31
 - Ajoute le tri par étoiles (importance, primaires d'abord) et par date
 - Ajoute l'affichage en liste compacte, en plus des cartes
