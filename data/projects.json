@@ -133,11 +133,7 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "1.0.1",
-      "updated": "2026-09-30",
-      "lastChanges": [
-        "L'icône de l'app s'affiche aussi dans les navigateurs et les liens qui demandent favicon.ico"
-      ]
+      "updated": "2026-09-30"
     },
     {
       "slug": "stockportfolio",
@@ -166,11 +162,7 @@
       "visible": true,
       "stars": 2,
       "tier": "secondaire",
-      "version": "1.0.1",
-      "updated": "2026-09-30",
-      "lastChanges": [
-        "L'icône de l'app s'affiche aussi dans les navigateurs et les liens qui demandent favicon.ico"
-      ]
+      "updated": "2026-09-30"
     },
     {
       "slug": "studio-crea",
@@ -305,7 +297,8 @@
         "6. Inclinaison du Pencil pour ombrer à plat (P)",
         "7. Estompe / doigt adapté aux pixels (P, PS)",
         "8. Mode de fusion propre à chaque pinceau (PS)"
-      ]
+      ],
+      "updated": "2026-10-05"
     },
     {
       "slug": "fusain",
@@ -334,10 +327,11 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "1.28.0",
-      "updated": "2026-10-31",
+      "version": "1.10.0",
+      "updated": "2026-10-28",
       "lastChanges": [
-        "Bulles : on peut aligner le texte à gauche, au centre ou à droite, et en haut, au milieu ou en bas (onglet Texte)"
+        "Double tape du bout du stylet : bascule plume et gomme (aussi le bouton du flanc ; le bout gomme du stylet gomme)",
+        "Rejet de la paume assoupli : seul le déplacement ou le trait d'un doigt isolé près du stylet est ignoré, zoom et annuler restent libres"
       ]
     },
     {
@@ -367,11 +361,11 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.99.5",
+      "version": "0.99.7",
       "updated": "2026-10-31",
       "lastChanges": [
-        "Le temps arrêté fige tout le dessin (nuages, pluie, fumée) et ternit les couleurs ; la pluie et la neige tombent aussi dans le ciel",
-        "Les bâtiments du camp reposent sur un socle plat qui couvre le relief ; l'aérodrome garde le sol du terrain, seule la piste (glaise, lignes blanches) a sa couleur et ne clignote plus"
+        "La terre sèche vire à la boue en taches qui grandissent ; la pluie ronge les parois des cratères et les flaques se rejoignent en lacs",
+        "Le brouillard se voit : un voile gris sur tout le champ et des bancs de brume qui dérivent au ras du sol"
       ],
       "roadmap": [
         "**Arbres** : animation de chute sous un bombardement ; feuillage ellipsoïdal (rond) ; même aspect à tous les zooms (on peut simplifier les formes, pas en retirer le nombre).",
@@ -411,12 +405,11 @@
       "version": "0.1.0",
       "updated": "2026-10-14",
       "lastChanges": [
-        "Dix heures du soir : la première heure de la nuit se joue",
-        "Choisis deux visiteurs, écris des fragments avant que la bougie s'éteigne",
-        "Un degré écrit pour la première fois de la nuit (le hapax) compte double"
+        "Premier lancement : écran titre, réglages, sauvegarde"
       ],
       "roadmap": [
-        "Validation de Jérôme en jouant sur téléphone → 1.0.0 sur sa décision"
+        "La boucle de jeu, jouable aux deux cibles",
+        "Le critère de validation, mesuré (voir DESIGN.md)"
       ]
     },
     {
@@ -622,7 +615,8 @@
       "featured": false,
       "visible": true,
       "stars": 3,
-      "tier": "secondaire"
+      "tier": "secondaire",
+      "updated": "2026-09-10"
     },
     {
       "slug": "frere-de-la-cote",
@@ -652,7 +646,8 @@
       "featured": true,
       "visible": true,
       "stars": 4,
-      "tier": "primaire"
+      "tier": "primaire",
+      "updated": "2026-08-29"
     },
     {
       "slug": "space-crusader",
@@ -687,7 +682,8 @@
         "Palier 1 : la garnison est produite plus vite/plus forte.",
         "Palier 2 : les rangées arrière deviennent hostiles (réutilise le système",
         "**Intentions visibles** (à la Slay the Spire) : une tourelle réveillée"
-      ]
+      ],
+      "updated": "2026-08-03"
     },
     {
       "slug": "Mission-secrete",
@@ -716,7 +712,8 @@
       "featured": false,
       "visible": true,
       "stars": 3,
-      "tier": "secondaire"
+      "tier": "secondaire",
+      "updated": "2026-06-21"
     },
     {
       "slug": "les-carnets-editions",
@@ -744,7 +741,8 @@
       "featured": false,
       "visible": true,
       "stars": 3,
-      "tier": "secondaire"
+      "tier": "secondaire",
+      "updated": "2026-09-17"
     },
     {
       "slug": "les-carnets-wp",
@@ -798,7 +796,8 @@
       "featured": false,
       "visible": false,
       "stars": 2,
-      "tier": "secondaire"
+      "tier": "secondaire",
+      "updated": "2026-10-22"
     },
     {
       "slug": "La-fabrique",
@@ -822,7 +821,8 @@
       "featured": false,
       "visible": false,
       "stars": 1,
-      "tier": "secondaire"
+      "tier": "secondaire",
+      "updated": "2026-06-16"
     },
     {
       "slug": "gsc-tools",
