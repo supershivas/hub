@@ -361,12 +361,10 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.102.0",
+      "version": "0.105.1",
       "updated": "2026-11-01",
       "lastChanges": [
-        "Les postes de mitrailleuse se choisissent (étiquette ou clic) : un clic sur le sol tourne leur cône de 70° au plus de chaque côté ; barres de vie et de munitions, la bande se refait à l'aube",
-        "L'expérience : barre et chevrons sur les cartes de régiment, les chars et les postes, le chevron gagné saute ; les chevrons sont plus durs à gagner (seuils 0,2 / 0,5 / 0,85)",
-        "Chaque chevron donne un bonus : régiment +5 % de précision et un moral plus solide, char moins de dégâts d'obus, mitrailleuse plus de rafales ; montré dans les fiches"
+        "Les soldats de près ont deux niveaux de détail : le fin dès 24 pixels par mètre (boutons, galons, moustache, pipe, casque rond), un plus simple de 12 à 16 qui coûte moins à dessiner"
       ],
       "roadmap": [
         "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
