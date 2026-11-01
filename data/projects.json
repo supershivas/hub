@@ -361,11 +361,12 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.99.7",
+      "version": "0.99.11",
       "updated": "2026-10-31",
       "lastChanges": [
-        "La terre sèche vire à la boue en taches qui grandissent ; la pluie ronge les parois des cratères et les flaques se rejoignent en lacs",
-        "Le brouillard se voit : un voile gris sur tout le champ et des bancs de brume qui dérivent au ras du sol"
+        "Grande offensive : en face lance ses chars ; à tous les niveaux, ses barrages visent nos chars, devant eux quand ils roulent",
+        "L'hôpital : les blessés évacués y sont comptés et soignés, ses niveaux en sauvent plus, on y renvoie les guéris dans le régiment de son choix",
+        "Les arbres tombent sous les obus et ont un feuillage rond ; la fumée est faite d'ellipses ; les bâtiments du camp ont des drapeaux qui flottent et des hommes sans arme qui font les cent pas"
       ],
       "roadmap": [
         "**Arbres** : animation de chute sous un bombardement ; feuillage ellipsoïdal (rond) ; même aspect à tous les zooms (on peut simplifier les formes, pas en retirer le nombre).",
@@ -440,12 +441,11 @@
       "visible": true,
       "stars": 4,
       "tier": "primaire",
-      "version": "1.1.0",
-      "updated": "2026-10-05",
+      "version": "1.7.0",
+      "updated": "2026-10-31",
       "lastChanges": [
-        "Montagne vue de face, héros plus petit, palette Game Boy avec un rose fluo",
-        "Ressources à ramasser sur la paroi, blocs, verglas et chutes de pierres à esquiver",
-        "Radio météo : prévisions du lendemain sur un écran Game Boy"
+        "On peut faire défiler la paroi (glisser, molette, PageUp / PageDown) pour revoir le chemin parcouru, avec un bouton pour revenir au joueur",
+        "La recherche de Firefox ne se déclenche plus quand on tape en jouant, y compris dans l'aperçu"
       ]
     },
     {
@@ -847,10 +847,11 @@
       "visible": true,
       "stars": 1,
       "tier": "secondaire",
-      "version": "1.7.1",
-      "updated": "2026-10-30",
+      "version": "1.10.0",
+      "updated": "2026-10-31",
       "lastChanges": [
-        "Barre au survol : le bouton « Éditer », redondant avec le panneau de droite, est retiré ; « Dataviz… » reste"
+        "Europa 3D : vitrage très réfléchissant, spots linéaires (3 par vitre haute, 1 par petite fenêtre) qui éclairent de l'intérieur",
+        "Europa 3D : salles de réunion, dont une salle circulaire au niveau 5 inspirée du Conseil européen"
       ]
     }
   ],
