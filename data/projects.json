@@ -361,20 +361,20 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.99.11",
-      "updated": "2026-10-31",
+      "version": "0.102.0",
+      "updated": "2026-11-01",
       "lastChanges": [
-        "Grande offensive : en face lance ses chars ; à tous les niveaux, ses barrages visent nos chars, devant eux quand ils roulent",
-        "L'hôpital : les blessés évacués y sont comptés et soignés, ses niveaux en sauvent plus, on y renvoie les guéris dans le régiment de son choix",
-        "Les arbres tombent sous les obus et ont un feuillage rond ; la fumée est faite d'ellipses ; les bâtiments du camp ont des drapeaux qui flottent et des hommes sans arme qui font les cent pas"
+        "Les postes de mitrailleuse se choisissent (étiquette ou clic) : un clic sur le sol tourne leur cône de 70° au plus de chaque côté ; barres de vie et de munitions, la bande se refait à l'aube",
+        "L'expérience : barre et chevrons sur les cartes de régiment, les chars et les postes, le chevron gagné saute ; les chevrons sont plus durs à gagner (seuils 0,2 / 0,5 / 0,85)",
+        "Chaque chevron donne un bonus : régiment +5 % de précision et un moral plus solide, char moins de dégâts d'obus, mitrailleuse plus de rafales ; montré dans les fiches"
       ],
       "roadmap": [
-        "**Arbres** : animation de chute sous un bombardement ; feuillage ellipsoïdal (rond) ; même aspect à tous les zooms (on peut simplifier les formes, pas en retirer le nombre).",
-        "**Aérodrome** : le sol du camp est le sol du terrain ; seule la piste a sa couleur (et quelques lignes blanches) ; la piste scintille (sans doute deux faces à la même hauteur : à corriger) ; les avions décollent de l'aérodrome avant leur attaque.",
-        "**Chars** : le char part du parc des chars ; le parc affiche le nombre total, un bouton vers les chars déployés et leur état (un clic centre la vue sur le char). Fenêtre d'ordres du char : décollée des boutons d'artillerie, boutons au design system, ordre en cours, vie du char, comprendre la 2e barre (bleue : cooldown du canon ? elle ne bouge pas : la faire vivre ou la retirer) ; l'artillerie arrête les chars trop difficilement (rééquilibrer par mesure).",
-        "**Fumée** : ellipses (plus de cubes), volutes plus réalistes.",
-        "**Météo** : la pluie est coupée au début du ciel (étrange) ; terre sèche → boue en transition douce et organique ; une pluie continue ne doit plus aplanir les cratères en lacs (l'eau s'y accumule sans raboter le relief).",
-        "**Carte** (Jérôme, « les deux ») : un clic sur C2 cadre la vue 3D sur le seul secteur C2 **et** la carte n'affiche plus que C2 en gros plan, avec un retour à la vue d'ensemble."
+        "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
+        "**Mesure du feuillage rond** : 42 triangles par touffe au lieu de 30 (+40 %), mais pas de comparaison avant / après sur la même machine ; à refaire (`scripts/mesure.mjs --soldats 2000`), le rendu est déjà à 124 ms à 4 px/m.",
+        "**Bâtiments des bases** : l'aspect lui-même n'est pas refondu (seuls drapeaux, socle et hommes ont été ajoutés).",
+        "**Volutes de fumée** plus réalistes (forme faite, mouvement à juger en jeu).",
+        "**Hôpital** : les blessés « en déroute » n'y vont pas (dépend du lot D).",
+        "**Lacs vrais** (fond qui monte, niveau d'eau qui déborde d'un trou à l'autre) : non fait, la pluie érode seulement les parois."
       ]
     },
     {
