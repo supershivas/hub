@@ -361,11 +361,10 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.106.0",
+      "version": "0.108.1",
       "updated": "2026-11-02",
       "lastChanges": [
-        "Nouvelle partie : les secteurs sont des cartes de papier usé posées sur une table ; la carte choisie glisse sur le dessus de la pile avec sa vraie carte en 3D, sa description, la saison, le niveau et la durée",
-        "La description d'un niveau n'est plus qu'une infobulle au survol, et les infobulles s'affichent au-dessus des fenêtres"
+        "Les cartes de secteur n'ont plus de pli vertical au milieu (il ne rendait pas bien) ; le pli horizontal reste"
       ],
       "roadmap": [
         "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
