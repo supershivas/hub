@@ -846,11 +846,11 @@
       "visible": true,
       "stars": 1,
       "tier": "secondaire",
-      "version": "1.13.0",
+      "version": "1.23.0",
       "updated": "2026-11-03",
       "lastChanges": [
-        "Propriétés et structure en cartes repliables ; fond et contour au choix sur chaque élément ; couleurs modifiables, renommables et ajoutables partout",
-        "Glisser-déposer avec aperçu en direct (sections, sous-sections, colonnes) ; une colonne se vise sur toute sa hauteur"
+        "Dataviz : option Hauteur (automatique, proportion, fixe, remplir la place disponible de la page)",
+        "Mode « Remplir » : la dataviz occupe l'espace restant de sa page, partagé entre plusieurs dataviz, sans déborder"
       ]
     }
   ],
