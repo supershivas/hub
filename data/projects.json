@@ -361,10 +361,11 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.108.1",
-      "updated": "2026-11-02",
+      "version": "0.110.1",
+      "updated": "2026-11-03",
       "lastChanges": [
-        "Les cartes de secteur n'ont plus de pli vertical au milieu (il ne rendait pas bien) ; le pli horizontal reste"
+        "Boutons, casse et unités uniformes : même ombre, mêmes 44 px, mêmes barres pour régiments, chars, mitrailleuses et batteries",
+        "Un régiment choisi s'inverse de la même façon sur sa carte et sur le champ ; chars et mitrailleuses ont le liseré de l'armée et un survol"
       ],
       "roadmap": [
         "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
@@ -845,11 +846,11 @@
       "visible": true,
       "stars": 1,
       "tier": "secondaire",
-      "version": "1.10.0",
-      "updated": "2026-10-31",
+      "version": "1.13.0",
+      "updated": "2026-11-03",
       "lastChanges": [
-        "Europa 3D : vitrage très réfléchissant, spots linéaires (3 par vitre haute, 1 par petite fenêtre) qui éclairent de l'intérieur",
-        "Europa 3D : salles de réunion, dont une salle circulaire au niveau 5 inspirée du Conseil européen"
+        "Propriétés et structure en cartes repliables ; fond et contour au choix sur chaque élément ; couleurs modifiables, renommables et ajoutables partout",
+        "Glisser-déposer avec aperçu en direct (sections, sous-sections, colonnes) ; une colonne se vise sur toute sa hauteur"
       ]
     }
   ],
