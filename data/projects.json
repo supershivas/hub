@@ -846,11 +846,11 @@
       "visible": true,
       "stars": 1,
       "tier": "secondaire",
-      "version": "1.23.0",
-      "updated": "2026-11-03",
+      "version": "1.57.0",
+      "updated": "2026-11-04",
       "lastChanges": [
-        "Dataviz : option Hauteur (automatique, proportion, fixe, remplir la place disponible de la page)",
-        "Mode « Remplir » : la dataviz occupe l'espace restant de sa page, partagé entre plusieurs dataviz, sans déborder"
+        "Textes libres : plusieurs par colonne, placés où l'on veut (glisser dans l'aperçu, ou X / Y / largeur dans les propriétés), en texte riche ; remplace le texte libre « au-dessus / en dessous / à côté »",
+        "Styles de paragraphe : ajout de « Chiffre clé » et « Chiffre clé (petit) » (même typographie que les chiffres clés)"
       ]
     }
   ],
