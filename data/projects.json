@@ -361,11 +361,11 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.110.1",
-      "updated": "2026-11-03",
+      "version": "0.113.0",
+      "updated": "2026-11-05",
       "lastChanges": [
-        "Boutons, casse et unités uniformes : même ombre, mêmes 44 px, mêmes barres pour régiments, chars, mitrailleuses et batteries",
-        "Un régiment choisi s'inverse de la même façon sur sa carte et sur le champ ; chars et mitrailleuses ont le liseré de l'armée et un survol"
+        "Labo lumière : les soldats du jeu à tous les niveaux de détail (boîte, silhouette, soldat équipé, articulé), au lieu de simples colonnes",
+        "Des lanternes dans les tranchées et des lampes sur certains soldats, une carte quatre fois plus grande (512 × 320 m) et une colline"
       ],
       "roadmap": [
         "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
@@ -846,10 +846,10 @@
       "visible": true,
       "stars": 1,
       "tier": "secondaire",
-      "version": "1.57.1",
-      "updated": "2026-11-04",
+      "version": "1.66.1",
+      "updated": "2026-11-05",
       "lastChanges": [
-        "Aperçu 3D : l'erreur affiche maintenant sa cause précise (et la console du navigateur aussi) ; le dessin des pages réessaie une fois, ce qui peut régler certains cas sous Firefox"
+        "Éditeur de dataviz : en mode « Ajuster », l'aperçu tient en entier dans la fenêtre (largeur et hauteur), centré, sans barre de défilement ; le nom du type n'est plus coupé dans le panneau"
       ]
     }
   ],
