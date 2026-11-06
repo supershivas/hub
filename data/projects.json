@@ -846,11 +846,36 @@
       "visible": true,
       "stars": 1,
       "tier": "secondaire",
-      "version": "1.66.1",
-      "updated": "2026-11-05",
+      "version": "1.69.2",
+      "updated": "2026-11-06",
       "lastChanges": [
-        "Éditeur de dataviz : en mode « Ajuster », l'aperçu tient en entier dans la fenêtre (largeur et hauteur), centré, sans barre de défilement ; le nom du type n'est plus coupé dans le panneau"
+        "Export PDF : les textes des graphiques (légendes, axes, libellés) sont placés avec l'API SVG, pour que tous les mots sortent quel que soit le navigateur"
       ]
+    },
+    {
+      "slug": "desert",
+      "title": "desert",
+      "type": "app",
+      "tech": "Vanilla JS",
+      "stack": [
+        "Vanilla JS"
+      ],
+      "tags": [],
+      "summary": "À compléter.",
+      "thumbnail": "assets/projects/desert/thumb.jpg",
+      "screenshots": [],
+      "links": {
+        "demo": "https://supershivas.github.io/desert/",
+        "repo": "https://github.com/supershivas/desert",
+        "article": null,
+        "sources": []
+      },
+      "status": "active",
+      "tier": "secondaire",
+      "stars": 1,
+      "featured": false,
+      "visible": true,
+      "updated": "2026-11-06"
     }
   ],
   "ignoredRepos": [
