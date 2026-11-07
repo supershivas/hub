@@ -361,11 +361,10 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.113.1",
+      "version": "0.114.1",
       "updated": "2026-11-07",
       "lastChanges": [
-        "La ceinture des soldats vus de près ne scintille plus (ses flancs étaient dans le même plan que ceux de la vareuse)",
-        "Atelier d'animation : les poses du soldat se règlent avec des poignées 3D (tourner, déplacer, échelle), on voit les os, et on peut annuler (Ctrl+Z)"
+        "Tout dézoomé, tourner ou incliner la caméra ne déplace plus le point visé : le « mur » qui le poussait vers le fond de la carte a disparu"
       ],
       "roadmap": [
         "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
