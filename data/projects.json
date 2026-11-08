@@ -361,11 +361,12 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.120.0",
-      "updated": "2026-11-07",
+      "version": "0.131.0",
+      "updated": "2026-11-08",
       "lastChanges": [
-        "Chars, mitrailleuses et avions, des deux camps : une pastille ronde à la place des étiquettes, avec un arc de vie ; au survol, l'infobulle dit tout (état, vie, canon ou bande, expérience, victimes)",
-        "Un clic sur la pastille d'un de nos chars ou postes le choisit ; la pastille saute quand un chevron est gagné"
+        "Le parc et l'aérodrome ne montrent plus de faux engins : un avion par cellule de la flotte (au sol et en vie), un char par place du stock",
+        "Le génie répare à la base : un clic sur l'avion ou le char abîmé (ou le génie, puis l'engin cerclé d'os), ou un bouton « Réparer » par engin ; un char abîmé rentre d'abord au parc (« Rentrer au parc »)",
+        "Les gardes du camp font leur ronde autour des bâtiments, d'un vrai pas de marche, sans traverser un mur ; les drapeaux du camp prennent les couleurs de l'armée et flottent au vent comme ceux du front"
       ],
       "roadmap": [
         "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
