@@ -847,10 +847,12 @@
       "visible": true,
       "stars": 1,
       "tier": "secondaire",
-      "version": "1.69.2",
-      "updated": "2026-11-06",
+      "version": "1.85.0",
+      "updated": "2026-11-09",
       "lastChanges": [
-        "Export PDF : les textes des graphiques (légendes, axes, libellés) sont placés avec l'API SVG, pour que tous les mots sortent quel que soit le navigateur"
+        "Une page qui déborde ne cache plus rien : le contenu coupé s'affiche sous la page (estompé, hachuré) avec un trait rouge à la limite et « Dépasse de N px »",
+        "L'avertissement nomme chaque section touchée (entièrement hors de la page ou coupée) avec « Aller à la section » et « La déplacer sur l'autre page » (annulable) ; une pastille d'alerte marque aussi ces sections dans l'arbre",
+        "L'export PDF prévient quand une page déborde et demande « Exporter quand même ? »"
       ]
     },
     {
