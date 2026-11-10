@@ -848,12 +848,10 @@
       "visible": true,
       "stars": 1,
       "tier": "secondaire",
-      "version": "1.85.0",
-      "updated": "2026-11-09",
+      "version": "1.91.1",
+      "updated": "2026-11-10",
       "lastChanges": [
-        "Une page qui déborde ne cache plus rien : le contenu coupé s'affiche sous la page (estompé, hachuré) avec un trait rouge à la limite et « Dépasse de N px »",
-        "L'avertissement nomme chaque section touchée (entièrement hors de la page ou coupée) avec « Aller à la section » et « La déplacer sur l'autre page » (annulable) ; une pastille d'alerte marque aussi ces sections dans l'arbre",
-        "L'export PDF prévient quand une page déborde et demande « Exporter quand même ? »"
+        "Sécurité : l'ouverture d'un projet refuse les images distantes (adresses `https://…`) ; seules les images incorporées ou celles du dépôt sont gardées, pour qu'un fichier reçu ne fasse jamais charger un site tiers"
       ]
     },
     {
