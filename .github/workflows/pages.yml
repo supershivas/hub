@@ -27,6 +27,8 @@ jobs:
           node-version: 20
       - name: Valider projects.json
         run: node scripts/new-project.mjs --validate
+      - name: Vérifier les estampilles de version
+        run: node scripts/stamp-version.mjs --check
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

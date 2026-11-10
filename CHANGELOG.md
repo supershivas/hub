@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.2 — 2026-11-10
+- Corrige le prompt de nouvelle app resté vide après une mise à jour : le navigateur gardait l'ancien code en cache
+- Affiche un message clair si un modèle de prompt ne peut pas être lu
+
 ## 1.4.1 — 2026-11-10
 - Le prompt de nouvelle app est lu dans le design system, enrichi des pièges déjà rencontrés (CLAUDE.md, données, dépendances, vérifications)
 

@@ -150,9 +150,11 @@ const OUTILS = {
 };
 
 // ─── État d'un formulaire (gardé dans ce navigateur) ──────────────────────
-const vide = () => ({ nom: '', repo: '', pitch: '', references: '', choix: [], decisions: {}, precisions: {}, lot: '', ecrans: '', critere: '', refus: '' });
+const SCHEMA = 1;   // format du brouillon gardé dans ce navigateur
+const vide = () => ({ schemaVersion: SCHEMA, nom: '', repo: '', pitch: '', references: '', choix: [], decisions: {}, precisions: {}, lot: '', ecrans: '', critere: '', refus: '' });
 function charger(cle) {
-  try { return { ...vide(), ...JSON.parse(localStorage.getItem(cle) || '{}') }; } catch { return vide(); }
+  // brouillon sans numéro = format 1 (v1.4.0) : rien à migrer
+  try { return { ...vide(), ...JSON.parse(localStorage.getItem(cle) || '{}'), schemaVersion: SCHEMA }; } catch { return vide(); }
 }
 
 /** Affiche la page Créer dans `view`. `sorte` : 'jeu' ou 'app'. */
@@ -184,7 +186,7 @@ export function renderCreate(view, sorte, { projects = [], toast = () => {} } = 
 
   const etiquettes = el('div', { class: 'cr-etiquettes' });
   const zoneDecisions = el('div', {}, el('p', { class: 'hint' }, 'Chargement des catalogues…'));
-  const sortie = el('textarea', { class: 'cr-prompt', readOnly: true, rows: 18, 'aria-label': 'Prompt généré' });
+  const sortie = el('textarea', { class: 'cr-prompt', readOnly: true, rows: 18, 'aria-label': 'Prompt généré', placeholder: 'Chargement du modèle de prompt…' });
   const compte = el('span', { class: 'hint' });
   const manque = el('p', { class: 'cr-manque' });
 
@@ -413,9 +415,6 @@ export function renderCreate(view, sorte, { projects = [], toast = () => {} } = 
     return {
       dialog, rendre,
       ouvrir(tirage) {
-        // le toast doit passer devant la modale (couche supérieure) : on l'y range le temps qu'elle est ouverte
-        const t = document.getElementById('toast');
-        if (t) { dialog.append(t); dialog.addEventListener('close', () => document.body.append(t), { once: true }); }
         dialog.showModal();
         rendre();
         if (tirage) tirer(); else tirageZone.hidden = true;
@@ -499,6 +498,9 @@ export function renderCreate(view, sorte, { projects = [], toast = () => {} } = 
     maj();
     modaleChoix.rendre();
   }).catch(e => {
-    zoneDecisions.replaceChildren(el('p', { class: 'cr-manque' }, `Impossible de lire les fichiers ${sorte === 'jeu' ? 'de game-system' : 'de design-system'} (${e.message}).`));
+    const msg = `Impossible de lire le modèle de prompt sur ${sorte === 'jeu' ? 'game-system' : 'design-system'} (${e.message}). Vérifie la connexion, puis recharge la page.`;
+    zoneDecisions.replaceChildren(el('p', { class: 'cr-manque' }, msg));
+    manque.textContent = msg;
+    sortie.placeholder = 'Le prompt apparaîtra ici une fois le modèle chargé.';
   });
 }

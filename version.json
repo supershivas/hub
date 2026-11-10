@@ -1,7 +1,7 @@
 {
-  "version": "1.4.1",
+  "version": "1.4.2",
   "date": "2026-11-10",
   "changes": [
-    "Le prompt de nouvelle app suit désormais celui du design system, étoffé des leçons des autres apps"
+    "Corrige le prompt de nouvelle app resté vide après une mise à jour (ancien fichier en cache)"
   ]
 }

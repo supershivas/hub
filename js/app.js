@@ -1,5 +1,5 @@
-import { startUpdateCheck, loadVersion, loadChangelog, downloadJSON } from '../app-update.js';
-import { renderCreate } from './creer.js';
+import { startUpdateCheck, loadVersion, loadChangelog, downloadJSON } from '../app-update.js?v=1.4.2';
+import { renderCreate } from './creer.js?v=1.4.2';
 
 const TYPES = { app: 'App', jeu: 'Jeu', site: 'Site' };
 const view = document.getElementById('view');
@@ -66,10 +66,15 @@ async function loadTokens() {
   } catch { /* repli : valeurs de css/style.css */ }
 }
 
+// Le toast est un popover : il passe dans la couche supérieure, devant les <dialog> ouvertes.
+// Rouvert à chaque message pour repasser devant une modale ouverte entre-temps.
 function toast(msg) {
   const el = document.getElementById('toast');
-  el.textContent = msg; el.hidden = false;
-  setTimeout(() => { el.hidden = true; }, 4000);
+  const popover = typeof el.showPopover === 'function';
+  el.textContent = msg;
+  if (popover) { if (el.matches(':popover-open')) el.hidePopover(); el.showPopover(); } else el.hidden = false;
+  clearTimeout(toast.timer);
+  toast.timer = setTimeout(() => { popover ? el.matches(':popover-open') && el.hidePopover() : (el.hidden = true); }, 4000);
 }
 
 /* ── Routage par hash : #/ (accueil, filtres en query), #/p/<slug>, #/liens ── */
@@ -320,6 +325,8 @@ async function init() {
     view.innerHTML = '<p class="empty">Impossible de charger data/projects.json.</p>';
     return;
   }
+  data.schemaVersion ??= 1;   // format de projects.json ; migrer ici les anciens formats s'il change
+  if (typeof document.getElementById('toast').showPopover !== 'function') document.getElementById('toast').hidden = true;
   publishedStars = Object.fromEntries(data.projects.map(p => [p.slug, p.stars]));
   applyStarEdits();
   setupSettings();
