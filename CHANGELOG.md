@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.4.1 — 2026-11-10
+- Le prompt de nouvelle app est lu dans le design system, enrichi des pièges déjà rencontrés (CLAUDE.md, données, dépendances, vérifications)
+
 ## 1.4.0 — 2026-11-10
 - Ajoute l'onglet Créer : un formulaire qui écrit le prompt de démarrage d'un nouveau jeu (repris de game-system) ou d'une nouvelle app
 - Les inspirations du jeu et les apps modèles se choisissent dans une fenêtre au premier plan, avec tirage au sort pour les jeux

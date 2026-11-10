@@ -14,7 +14,7 @@ Vanilla JS statique (modules ES, sans build), GitHub Pages via GitHub Actions. A
 
 ## Structure
 
-`data/projects.json` (données), `js/app.js` (rendu), `js/creer.js` (onglet Créer : prompts de nouveau jeu et de nouvelle app), `data/prompt-nouvelle-app.md` (modèle du prompt d'app), `css/style.css`, `scripts/new-project.mjs` (ajout et validation), `docs/AJOUTER-UN-PROJET.md`, `scripts/sync-repos.mjs` + `scripts/enrich-projects.mjs` (version, date, modifications, roadmap) + `scripts/screenshot.mjs` (ajout automatique des nouveaux dépôts, workflow `sync-repos.yml`). Un ajout de projet est un changement de contenu : pas de bump de version.
+`data/projects.json` (données), `js/app.js` (rendu), `js/creer.js` (onglet Créer : prompts de nouveau jeu et de nouvelle app), `css/style.css`, `scripts/new-project.mjs` (ajout et validation), `docs/AJOUTER-UN-PROJET.md`, `scripts/sync-repos.mjs` + `scripts/enrich-projects.mjs` (version, date, modifications, roadmap) + `scripts/screenshot.mjs` (ajout automatique des nouveaux dépôts, workflow `sync-repos.yml`). Un ajout de projet est un changement de contenu : pas de bump de version.
 
 ## Exceptions aux conventions
 
@@ -28,4 +28,4 @@ Les champs `tier` (primaire/secondaire) et `stars` (1 à 5) se règlent à la ma
 
 Les projets avec `visible: false` sont masqués mais restent dans le fichier. Le lien repo de `les-carnets-wp` (privé) est volontairement absent.
 
-L'outil « Nouveau jeu » lit en direct les fichiers de game-system sur raw.githubusercontent.com (`templates/PROMPT-NOUVEAU-JEU.md`, `GENRES.md`, `INSPIRATION.md`, `MES-INSPIRATIONS.md`) : ne pas les recopier dans le hub. Les brouillons des deux formulaires sont dans `localStorage` (`hub-creer-jeu`, `hub-creer-app`). Les choix (inspirations, apps modèles) s'ouvrent dans une modale, jamais dans un onglet ; le toast y est déplacé tant qu'elle est ouverte pour passer devant.
+L'outil « Nouveau jeu » lit en direct les fichiers de game-system sur raw.githubusercontent.com (`templates/PROMPT-NOUVEAU-JEU.md`, `GENRES.md`, `INSPIRATION.md`, `MES-INSPIRATIONS.md`), et « Nouvelle app » celui de design-system (`templates/PROMPT-NOUVELLE-APP.md`) : ne pas les recopier dans le hub. Le formulaire s'appuie sur les lignes « À quoi elle sert : [ … ] » et « Avant d'écrire du code : » du modèle. Les brouillons des deux formulaires sont dans `localStorage` (`hub-creer-jeu`, `hub-creer-app`). Les choix (inspirations, apps modèles) s'ouvrent dans une modale, jamais dans un onglet ; le toast y est déplacé tant qu'elle est ouverte pour passer devant.

@@ -1,8 +1,7 @@
 {
-  "version": "1.4.0",
+  "version": "1.4.1",
   "date": "2026-11-10",
   "changes": [
-    "Ajoute l'onglet Créer : écrire le prompt de démarrage d'un nouveau jeu ou d'une nouvelle app",
-    "Les inspirations et les apps modèles se choisissent dans une fenêtre au premier plan"
+    "Le prompt de nouvelle app suit désormais celui du design system, étoffé des leçons des autres apps"
   ]
 }

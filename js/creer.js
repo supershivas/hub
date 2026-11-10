@@ -4,13 +4,14 @@
 // - Nouveau jeu : l'outil de game-system, qui LIT ses fichiers sur GitHub
 //   (templates/PROMPT-NOUVEAU-JEU.md, GENRES.md, INSPIRATION.md,
 //   MES-INSPIRATIONS.md) : changer ces fichiers change l'outil.
-// - Nouvelle app : même principe, à partir de data/prompt-nouvelle-app.md,
-//   avec les apps du hub comme modèles possibles.
+// - Nouvelle app : même principe, à partir de templates/PROMPT-NOUVELLE-APP.md
+//   de design-system, avec les apps du hub comme modèles possibles.
 //
 // Les brouillons sont gardés dans ce navigateur (hub-creer-jeu, hub-creer-app).
 
 const GS_RAW = 'https://raw.githubusercontent.com/supershivas/game-system/main/';
 const GS_BLOB = 'https://github.com/supershivas/game-system/blob/main/';
+const DS_RAW = 'https://raw.githubusercontent.com/supershivas/design-system/main/';
 const MAX_INSPI = 6;
 const MAX_MODELES = 3;
 
@@ -127,7 +128,7 @@ const OUTILS = {
     placeholderNom: 'Carnet de courses',
     champsTexte: ['nom', 'repo', 'pitch', 'references', 'lot', 'ecrans', 'critere', 'refus'],
     async charger() {
-      const modele = await lire('data/prompt-nouvelle-app.md');
+      const modele = await lire(DS_RAW + 'templates/PROMPT-NOUVELLE-APP.md');
       return {
         modele,
         sections: [
@@ -498,6 +499,6 @@ export function renderCreate(view, sorte, { projects = [], toast = () => {} } = 
     maj();
     modaleChoix.rendre();
   }).catch(e => {
-    zoneDecisions.replaceChildren(el('p', { class: 'cr-manque' }, `Impossible de lire les fichiers ${sorte === 'jeu' ? 'de game-system' : 'du modèle'} (${e.message}).`));
+    zoneDecisions.replaceChildren(el('p', { class: 'cr-manque' }, `Impossible de lire les fichiers ${sorte === 'jeu' ? 'de game-system' : 'de design-system'} (${e.message}).`));
   });
 }
