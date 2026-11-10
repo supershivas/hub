@@ -1,4 +1,5 @@
 import { startUpdateCheck, loadVersion, loadChangelog, downloadJSON } from '../app-update.js';
+import { renderCreate } from './creer.js';
 
 const TYPES = { app: 'App', jeu: 'Jeu', site: 'Site' };
 const view = document.getElementById('view');
@@ -79,13 +80,15 @@ function parseRoute() {
 
 function render() {
   const { parts, params } = parseRoute();
+  const section = parts[0] === 'liens' || parts[0] === 'creer' ? parts[0] : parts[0] === 'p' ? 'p' : 'home';
   document.querySelectorAll('[data-nav]').forEach(a => {
-    const on = (a.dataset.nav === 'liens') === (parts[0] === 'liens') && parts[0] !== 'p';
+    const on = a.dataset.nav === section;
     on ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current');
   });
   document.getElementById('settings').open && document.getElementById('settings').close();
   if (parts[0] === 'p' && parts[1]) renderDetail(decodeURIComponent(parts[1]));
   else if (parts[0] === 'liens') renderLinks();
+  else if (parts[0] === 'creer') renderCreate(view, parts[1], { projects: data.projects, toast });
   else renderHome(params);
   if (!render.first) { window.scrollTo(0, 0); }
   render.first = false;

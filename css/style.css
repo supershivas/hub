@@ -198,3 +198,87 @@ dialog::backdrop { background: rgba(0, 0, 0, 0.4); }
   padding: 12px 18px; border-radius: var(--radius-md); background: var(--surface-2); border: 1px solid var(--border);
   box-shadow: 0 8px 24px rgba(0, 0, 0, .4); z-index: 100;
 }
+
+/* Page Créer (js/creer.js) */
+.cr-sortes { margin-bottom: 20px; }
+.cr-sortes .chip { gap: 8px; text-decoration: none; }
+.cr-colonnes { display: grid; gap: 24px; align-items: start; }
+@media (min-width: 960px) {
+  .cr-colonnes { grid-template-columns: minmax(0, 1fr) minmax(0, 420px); }
+  .cr-sortie { position: sticky; top: 68px; max-height: calc(100vh - 84px); overflow: auto; }
+}
+.cr-form { display: grid; gap: 16px; min-width: 0; }
+.cr-bloc { display: grid; gap: 16px; padding: 16px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
+#view .cr-form > div > .cr-bloc + .cr-bloc { margin-top: 16px; }
+.cr-bloc h2 { font-size: 1.15rem; }
+.cr-champ, .cr-decision { display: grid; gap: 6px; min-width: 0; }
+.cr-champ > span:first-child, .cr-titre { font-weight: 500; }
+.cr-champ small, .cr-decision small { color: var(--muted); font-size: .85rem; }
+.cr-requis { margin-left: 8px; color: var(--accent-text); font-size: .75rem; font-weight: 400; }
+.cr-form input:not([type="checkbox"]):not([type="radio"]), .cr-form textarea, .cr-prompt {
+  width: 100%; min-height: 44px; padding: 10px 12px; border: 1px solid var(--border); border-radius: var(--radius-md);
+  background: var(--surface-2); color: var(--fg); font: inherit; font-size: 16px;
+}
+.cr-form textarea { resize: vertical; }
+.cr-prefixe { display: flex; align-items: stretch; }
+.cr-prefixe > span { display: flex; align-items: center; padding: 0 10px; border: 1px solid var(--border); border-right: 0;
+  border-radius: var(--radius-md) 0 0 var(--radius-md); color: var(--muted); font-family: var(--font-mono); font-size: .85rem; }
+.cr-prefixe input { border-radius: 0 var(--radius-md) var(--radius-md) 0 !important; min-width: 0; }
+.cr-choix { display: flex; flex-wrap: wrap; gap: 6px; }
+.cr-choix label {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 12px;
+  border: 1px solid var(--border); border-radius: var(--radius-md); font-size: .9rem; cursor: pointer;
+}
+.cr-choix label:has(input:checked) { background: rgba(192, 57, 43, 0.22); border-color: transparent; color: var(--accent-text); }
+.cr-choix input { accent-color: var(--accent); width: 18px; height: 18px; margin: 0; }
+.cr-demander { color: var(--muted); }
+.cr-famille { flex-basis: 100%; margin-top: 6px; color: var(--muted); font-size: .75rem; letter-spacing: .06em; text-transform: uppercase; }
+.cr-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.cr-etiquettes { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.cr-etiquette { gap: 6px; background: rgba(192, 57, 43, 0.22); border-color: transparent; color: var(--accent-text); }
+.cr-sortie { display: grid; gap: 12px; padding: 16px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); min-width: 0; }
+.cr-sortie-tete { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px; }
+.cr-sortie-tete h2 { font-size: 1.15rem; }
+.cr-prompt { font-family: var(--font-mono); font-size: 13px; line-height: 1.5; resize: vertical; min-height: 280px; }
+.cr-manque { margin: 0; color: var(--accent-text); font-size: .9rem; }
+.cr-manque:empty { display: none; }
+.cr-sortie .hint a { color: var(--accent-text); }
+
+/* Modale de choix (inspirations, apps modèles) : au premier plan */
+dialog.cr-modale { width: min(960px, calc(100vw - 32px)); height: min(860px, 90vh); max-height: 90vh; }
+dialog.cr-modale[open] { display: flex; }
+.cr-modale-boite { display: flex; flex-direction: column; flex: 1; min-height: 0; width: 100%; }
+.cr-modale-boite .modal-head { gap: 12px; padding: 16px 16px 8px 20px; }
+.cr-modale-boite .modal-head h2 { margin-right: auto; }
+.cr-modale-outils { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 20px 12px; border-bottom: 1px solid var(--border); }
+.cr-modale-outils .search { flex: 1 1 220px; }
+.cr-modale-corps { flex: 1; min-height: 0; overflow: auto; overscroll-behavior: contain; padding: 12px 20px 20px; display: grid; gap: 16px; align-content: start; }
+.cr-modale-corps .hint a { color: var(--accent-text); }
+.cr-modale-pied { display: flex; justify-content: flex-end; padding: 12px 20px; border-top: 1px solid var(--border); }
+@media (max-width: 640px) {
+  dialog.cr-modale { width: 100vw; max-width: 100vw; height: 100dvh; max-height: 100dvh; border-radius: 0; border: 0; }
+  .cr-modale-boite .modal-head { padding-top: calc(12px + env(safe-area-inset-top, 0px)); }
+  .cr-modale-pied { padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px)); }
+}
+.cr-tirage { padding: 12px 16px; border: 1px solid var(--accent-text); border-radius: var(--radius-lg); background: var(--surface-2); display: grid; gap: 12px; }
+.cr-tirage[hidden] { display: none; }
+.cr-tirage ol { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+.cr-section { display: grid; gap: 12px; }
+.cr-section h3 { margin: 4px 0 0; }
+.cr-section h4 { margin: 4px 0 8px; font-size: .9rem; font-weight: 500; }
+.cr-repli { border: 1px solid var(--border); border-radius: var(--radius-md); }
+.cr-repli summary { display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 12px; cursor: pointer; font-weight: 500; }
+.cr-repli[open] > summary { border-bottom: 1px solid var(--border); }
+.cr-repli > :not(summary) { padding: 12px; }
+.cr-grille { display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.cr-item {
+  display: grid; gap: 4px; align-content: start; min-height: 44px; padding: 10px 12px; text-align: left;
+  border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface-2); color: var(--fg); font: inherit; cursor: pointer;
+}
+.cr-item.on { border-color: var(--accent-text); background: rgba(192, 57, 43, 0.22); }
+.cr-repere, .cr-servi { color: var(--muted); font-weight: 400; font-size: .8rem; }
+.cr-desc { color: var(--muted); font-size: .85rem; }
+@media (hover: hover) {
+  .cr-item:hover, .cr-choix label:hover { border-color: var(--accent-text); }
+}
+@media (max-width: 420px) { .app-nav a { padding: 0 8px; } .app-header { gap: 8px; } }

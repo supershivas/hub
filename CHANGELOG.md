@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.0 — 2026-11-10
+- Ajoute l'onglet Créer : un formulaire qui écrit le prompt de démarrage d'un nouveau jeu (repris de game-system) ou d'une nouvelle app
+- Les inspirations du jeu et les apps modèles se choisissent dans une fenêtre au premier plan, avec tirage au sort pour les jeux
+
 ## 1.3.0 — 2026-10-31
 - Permet de modifier les étoiles d'un projet en cliquant dessus sur sa fiche
 - Ajoute dans les Réglages la publication des étoiles modifiées (jeton GitHub gardé dans le navigateur)

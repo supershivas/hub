@@ -1,5 +1,8 @@
 {
-  "version": "1.3.0",
-  "date": "2026-10-31",
-  "changes": ["Permet de modifier les étoiles d'un projet depuis sa fiche", "Ajoute la publication des étoiles depuis les Réglages"]
+  "version": "1.4.0",
+  "date": "2026-11-10",
+  "changes": [
+    "Ajoute l'onglet Créer : écrire le prompt de démarrage d'un nouveau jeu ou d'une nouvelle app",
+    "Les inspirations et les apps modèles se choisissent dans une fenêtre au premier plan"
+  ]
 }
