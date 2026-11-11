@@ -848,10 +848,10 @@
       "visible": true,
       "stars": 1,
       "tier": "secondaire",
-      "version": "1.91.1",
-      "updated": "2026-11-10",
+      "version": "1.107.1",
+      "updated": "2026-11-11",
       "lastChanges": [
-        "Sécurité : l'ouverture d'un projet refuse les images distantes (adresses `https://…`) ; seules les images incorporées ou celles du dépôt sont gardées, pour qu'un fichier reçu ne fasse jamais charger un site tiers"
+        "Heatmap hiérarchisée : les lignes de niveau 1 ont des cases plus hautes et une valeur plus grande ; les niveaux 2 à 4 gardent la taille de base"
       ]
     },
     {
