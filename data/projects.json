@@ -848,10 +848,10 @@
       "visible": true,
       "stars": 1,
       "tier": "secondaire",
-      "version": "1.107.1",
-      "updated": "2026-11-11",
+      "version": "1.115.5",
+      "updated": "2026-11-12",
       "lastChanges": [
-        "Heatmap hiérarchisée : les lignes de niveau 1 ont des cases plus hautes et une valeur plus grande ; les niveaux 2 à 4 gardent la taille de base"
+        "Filet entre deux sections : espace au-dessus (15 / 18 / 24) et sous le filet (18 / 24 / 30) selon la densité"
       ]
     },
     {
