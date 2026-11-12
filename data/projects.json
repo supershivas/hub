@@ -848,10 +848,10 @@
       "visible": true,
       "stars": 1,
       "tier": "secondaire",
-      "version": "1.115.5",
+      "version": "1.116.2",
       "updated": "2026-11-12",
       "lastChanges": [
-        "Filet entre deux sections : espace au-dessus (15 / 18 / 24) et sous le filet (18 / 24 / 30) selon la densité"
+        "Raccourcis W, Alt + N et Alt + W : suivent la lettre du clavier (AZERTY compris)"
       ]
     },
     {
