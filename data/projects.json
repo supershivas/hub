@@ -848,10 +848,10 @@
       "visible": true,
       "stars": 1,
       "tier": "secondaire",
-      "version": "1.116.2",
-      "updated": "2026-11-12",
+      "version": "1.119.0",
+      "updated": "2026-11-13",
       "lastChanges": [
-        "Raccourcis W, Alt + N et Alt + W : suivent la lettre du clavier (AZERTY compris)"
+        "Format des nombres « EN — 1 227.5 » : milliers séparés par une espace (comme en France), point pour les décimales"
       ]
     },
     {
@@ -878,6 +878,31 @@
       "featured": false,
       "visible": true,
       "updated": "2026-11-06"
+    },
+    {
+      "slug": "Urban-Mobility-Simulator",
+      "title": "Urban-Mobility-Simulator",
+      "type": "app",
+      "tech": "Vanilla JS",
+      "stack": [
+        "Vanilla JS"
+      ],
+      "tags": [],
+      "summary": "À compléter.",
+      "thumbnail": null,
+      "screenshots": [],
+      "links": {
+        "demo": null,
+        "repo": "https://github.com/supershivas/Urban-Mobility-Simulator",
+        "article": null,
+        "sources": []
+      },
+      "status": "active",
+      "tier": "secondaire",
+      "stars": 1,
+      "featured": false,
+      "visible": true,
+      "updated": "2026-11-13"
     }
   ],
   "ignoredRepos": [
