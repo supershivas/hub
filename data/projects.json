@@ -362,12 +362,12 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.131.0",
-      "updated": "2026-11-08",
+      "version": "0.132.0",
+      "updated": "2026-11-14",
       "lastChanges": [
-        "Le parc et l'aérodrome ne montrent plus de faux engins : un avion par cellule de la flotte (au sol et en vie), un char par place du stock",
-        "Le génie répare à la base : un clic sur l'avion ou le char abîmé (ou le génie, puis l'engin cerclé d'os), ou un bouton « Réparer » par engin ; un char abîmé rentre d'abord au parc (« Rentrer au parc »)",
-        "Les gardes du camp font leur ronde autour des bâtiments, d'un vrai pas de marche, sans traverser un mur ; les drapeaux du camp prennent les couleurs de l'armée et flottent au vent comme ceux du front"
+        "La nuit, une rangée par régiment : ses valides et ses blessés, son moral, et ses corvées dessous, avec leurs icônes ; une loupe montre le régiment ou l'homme sur le champ ; les médailles en tableau ; le survol des chiffres raconte les jours et les nuits passés",
+        "Au petit matin, les soldats changés de régiment marchent jusqu'à leur nouvelle place ; le génie relève l'épave d'un char sur le champ (il repart à moitié de sa solidité)",
+        "La vue à la personne d'un char se place derrière lui, au-dessus ; les points de vie des avions sont arrondis"
       ],
       "roadmap": [
         "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
@@ -903,11 +903,11 @@
       "featured": false,
       "visible": true,
       "updated": "2026-11-14",
-      "version": "0.1.3",
+      "version": "0.2.0",
       "lastChanges": [
-        "Un bouton « Copier » à côté des identifiants du tronçon choisi",
-        "Le nombre d'anomalies de la barre d'état ouvre le rapport de qualité",
-        "La touche I ouvre l'aide clavier"
+        "Une vue 3D du corridor : bâtiments à leur hauteur réelle (UrbIS 3D), caméra orbitale, bascule 2D / 3D avec V",
+        "Les bâtiments se choisissent aussi : hauteur de la source ou « Non renseigné », même sélection dans les deux vues",
+        "La barre d'état tient sur une ligne"
       ]
     }
   ],
