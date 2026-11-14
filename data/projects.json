@@ -798,7 +798,7 @@
       "visible": false,
       "stars": 2,
       "tier": "secondaire",
-      "updated": "2026-10-22"
+      "updated": "2026-11-14"
     },
     {
       "slug": "La-fabrique",
@@ -902,7 +902,13 @@
       "stars": 1,
       "featured": false,
       "visible": true,
-      "updated": "2026-11-13"
+      "updated": "2026-11-14",
+      "version": "0.1.3",
+      "lastChanges": [
+        "Un bouton « Copier » à côté des identifiants du tronçon choisi",
+        "Le nombre d'anomalies de la barre d'état ouvre le rapport de qualité",
+        "La touche I ouvre l'aide clavier"
+      ]
     }
   ],
   "ignoredRepos": [
