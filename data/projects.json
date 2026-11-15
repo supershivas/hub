@@ -362,12 +362,12 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.132.0",
-      "updated": "2026-11-14",
+      "version": "0.135.0",
+      "updated": "2026-11-15",
       "lastChanges": [
-        "La nuit, une rangée par régiment : ses valides et ses blessés, son moral, et ses corvées dessous, avec leurs icônes ; une loupe montre le régiment ou l'homme sur le champ ; les médailles en tableau ; le survol des chiffres raconte les jours et les nuits passés",
-        "Au petit matin, les soldats changés de régiment marchent jusqu'à leur nouvelle place ; le génie relève l'épave d'un char sur le champ (il repart à moitié de sa solidité)",
-        "La vue à la personne d'un char se place derrière lui, au-dessus ; les points de vie des avions sont arrondis"
+        "Le printemps, quatrième saison au choix du secteur : des averses (la bataille commence sous la pluie), des matins de brouillard, des éclaircies, un gel tardif parfois ; une terre gorgée d'eau où la boue vient tôt",
+        "Au printemps, l'herbe est verte (une prairie), les arbres ont le vert tendre des feuilles neuves, quelques-uns en fleurs, et les buissons fleurissent",
+        "La carte au hasard peut tomber au printemps ; l'atelier de terrain du labo a un vrai printemps"
       ],
       "roadmap": [
         "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
@@ -848,10 +848,11 @@
       "visible": true,
       "stars": 1,
       "tier": "secondaire",
-      "version": "1.119.0",
-      "updated": "2026-11-13",
+      "version": "1.120.0",
+      "updated": "2026-11-15",
       "lastChanges": [
-        "Format des nombres « EN — 1 227.5 » : milliers séparés par une espace (comme en France), point pour les décimales"
+        "Copier-coller d'une section, d'une sous-section ou d'une colonne entre factsheets ouvertes (Ctrl/Cmd + C / V, boutons Copier / Coller, menu Édition)",
+        "Couleurs ajoutées, icônes importées et format des nombres suivent l'élément collé"
       ]
     },
     {
@@ -902,12 +903,16 @@
       "stars": 1,
       "featured": false,
       "visible": true,
-      "updated": "2026-11-14",
-      "version": "0.2.0",
+      "updated": "2026-11-15",
+      "version": "0.4.0",
       "lastChanges": [
-        "Une vue 3D du corridor : bâtiments à leur hauteur réelle (UrbIS 3D), caméra orbitale, bascule 2D / 3D avec V",
-        "Les bâtiments se choisissent aussi : hauteur de la source ou « Non renseigné », même sélection dans les deux vues",
-        "La barre d'état tient sur une ligne"
+        "Éditeur de carrefour (N pour choisir un nœud, M ou C pour l'ouvrir) : chaque voie qui entre se raccorde aux voies qui sortent ; le jeu propose, vous validez ou changez",
+        "Passages piétons, traversées cyclables et régulation (feux, priorités) par carrefour, « Non renseigné » tant que vous ne les posez pas",
+        "Les voies créées dans une rue restent raccordées à ses carrefours, sur la carte comme en 3D"
+      ],
+      "roadmap": [
+        "Couleurs des bandes (cyclable, bus, stationnement, planté) : [À VALIDER]",
+        "Méthode de proposition à confronter au terrain (mouvements interdits, voies d'affectation)"
       ]
     }
   ],
