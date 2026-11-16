@@ -362,12 +362,10 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.138.0",
-      "updated": "2026-11-15",
+      "version": "0.141.2",
+      "updated": "2026-11-16",
       "lastChanges": [
-        "Le sol a du grain : des mottes et des éclats de glaise dans la boue, des fentes dans la glaise, des touffes et des cailloux dans l'herbe, et des bords effrangés entre l'herbe, la boue et la glaise (de près ; les seules couleurs de la palette)",
-        "Les arbres du front : peupliers d'Italie en colonnes (une gerbe dressée l'hiver), saules têtards, chênes larges, hêtres denses, bouleaux au tronc pâle ; chacun ses tons à chaque saison, des verts d'été propres à chaque essence, des couronnes en grappes de près",
-        "Des buissons en boules serrées, de tons mêlés ; l'hiver, des brindilles, coiffées de blanc sous la neige"
+        "Les arbres changent de niveau de détail en douceur : de loin ils gardent les mêmes grappes et les mêmes tons, et le passage d'un niveau à l'autre se fait en fondu (une trame de pixels) au lieu d'un saut"
       ],
       "roadmap": [
         "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
@@ -848,11 +846,11 @@
       "visible": true,
       "stars": 1,
       "tier": "secondaire",
-      "version": "1.120.0",
-      "updated": "2026-11-15",
+      "version": "1.121.1",
+      "updated": "2026-11-16",
       "lastChanges": [
-        "Copier-coller d'une section, d'une sous-section ou d'une colonne entre factsheets ouvertes (Ctrl/Cmd + C / V, boutons Copier / Coller, menu Édition)",
-        "Couleurs ajoutées, icônes importées et format des nombres suivent l'élément collé"
+        "Chiffre clé : le cercle autour de l'icône se choisit dès qu'une icône est posée",
+        "Moins d'espace sous l'en-tête des chiffres ; pictogrammes seuls calés sur le texte ; barres de progression alignées entre chiffres voisins"
       ]
     },
     {
