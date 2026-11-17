@@ -362,10 +362,11 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.141.2",
-      "updated": "2026-11-16",
+      "version": "0.142.2",
+      "updated": "2026-11-17",
       "lastChanges": [
-        "Les arbres changent de niveau de détail en douceur : de loin ils gardent les mêmes grappes et les mêmes tons, et le passage d'un niveau à l'autre se fait en fondu (une trame de pixels) au lieu d'un saut"
+        "Chaque soldat a sa démarche : sa foulée et sa cadence, les épaules qui tournent contre les hanches, le poids reporté d'une jambe sur l'autre, le fusil tenu à deux mains ; au repos, le poids sur une jambe",
+        "Les soldats épaulent avant de tirer, la crosse au creux de l'épaule, et continuent de marcher en tirant"
       ],
       "roadmap": [
         "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
