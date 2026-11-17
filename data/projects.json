@@ -362,11 +362,10 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.142.2",
+      "version": "0.148.1",
       "updated": "2026-11-17",
       "lastChanges": [
-        "Chaque soldat a sa démarche : sa foulée et sa cadence, les épaules qui tournent contre les hanches, le poids reporté d'une jambe sur l'autre, le fusil tenu à deux mains ; au repos, le poids sur une jambe",
-        "Les soldats épaulent avant de tirer, la crosse au creux de l'épaule, et continuent de marcher en tirant"
+        "Le sang des blessés se limite à la blessure : autour du pansement du bras, de la cuisse ou de la tête"
       ],
       "roadmap": [
         "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
