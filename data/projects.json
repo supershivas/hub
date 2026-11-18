@@ -362,10 +362,10 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.148.1",
+      "version": "0.148.2",
       "updated": "2026-11-17",
       "lastChanges": [
-        "Le sang des blessés se limite à la blessure : autour du pansement du bras, de la cuisse ou de la tête"
+        "Le temps du premier jour est tiré au hasard : une nouvelle partie ne commence plus toujours sous la pluie"
       ],
       "roadmap": [
         "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
