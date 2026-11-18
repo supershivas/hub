@@ -362,10 +362,12 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.148.2",
-      "updated": "2026-11-17",
+      "version": "0.150.0",
+      "updated": "2026-11-18",
       "lastChanges": [
-        "Le temps du premier jour est tiré au hasard : une nouvelle partie ne commence plus toujours sous la pluie"
+        "La soirée en trois étapes : la carte du front et le registre, le camp en arbres (achats au clic, rendus jusqu'à l'aube), les régiments en paquets d'hommes à glisser",
+        "L'infanterie s'améliore au camp pour tous les régiments ; un régiment vidé de ses hommes est dissous à l'aube",
+        "La dotation rapporte 2 points chaque soir"
       ],
       "roadmap": [
         "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
@@ -846,11 +848,10 @@
       "visible": true,
       "stars": 1,
       "tier": "secondaire",
-      "version": "1.121.1",
-      "updated": "2026-11-16",
+      "version": "1.126.0",
+      "updated": "2026-11-18",
       "lastChanges": [
-        "Chiffre clé : le cercle autour de l'icône se choisit dès qu'une icône est posée",
-        "Moins d'espace sous l'en-tête des chiffres ; pictogrammes seuls calés sur le texte ; barres de progression alignées entre chiffres voisins"
+        "Carte Document : curseur « Taille du texte » de 80 à 120 % (100 % par défaut), avec retour à 100 %"
       ]
     },
     {
