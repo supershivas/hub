@@ -900,18 +900,19 @@
       "stars": 1,
       "featured": false,
       "visible": true,
-      "updated": "2026-11-18",
-      "version": "0.5.0",
+      "updated": "2026-11-19",
+      "version": "0.9.1",
       "lastChanges": [
-        "Flux et demande (F) : posez la demande d'une rue par mode et par sens ; capacité, saturation, personnes / h, temps de parcours et délai aux feux se recalculent à chaque modification",
-        "Les comptages vélo réels de Bruxelles Mobilité (rue de la Loi, Tervueren, Nerviens) servent de demande ; les valeurs de référence sont citées et « Non renseigné » reste la règle sans donnée",
-        "Couche Flux (touche 0) : la saturation des rues sur la carte ; l'inspecteur d'un carrefour compte ses points de conflit par paire de modes"
+        "La bêta « Carte blanche » s'ouvre même avec un bloqueur de publicités : son module de trafic, refusé à cause de son nom, s'appelle autrement",
+        "Nouvel outil Démolir (touche 4 ou Suppr) : le tronçon survolé passe en rouge, un clic le retire et les carrefours qui n'en sont plus se referment"
       ],
       "roadmap": [
         "Couleurs des bandes (cyclable, bus, stationnement, planté) : [À VALIDER]",
         "Méthode de proposition à confronter au terrain (mouvements interdits, voies d'affectation)",
         "Taux d'occupation des voitures et des bus : aucune source citée (hypothèse du joueur, « Non renseigné » au départ)",
-        "Flux en 3D ; légende de la couche Flux"
+        "Flux en 3D ; légende de la couche Flux",
+        "D'autres missions (personnes / h avec l'occupation de jeu, conflits, bus) ; récompense (étoiles ?) à redéfinir",
+        "Les bandeaux experts restent denses (section, carrefour, flux)"
       ]
     }
   ],
