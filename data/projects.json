@@ -362,12 +362,10 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.150.0",
+      "version": "0.150.1",
       "updated": "2026-11-18",
       "lastChanges": [
-        "La soirée en trois étapes : la carte du front et le registre, le camp en arbres (achats au clic, rendus jusqu'à l'aube), les régiments en paquets d'hommes à glisser",
-        "L'infanterie s'améliore au camp pour tous les régiments ; un régiment vidé de ses hommes est dissous à l'aube",
-        "La dotation rapporte 2 points chaque soir"
+        "La fin de partie dit les régiments dissous : le jour, leur nom barré, à qui sont allés leurs hommes ; ils perdent leurs médailles"
       ],
       "roadmap": [
         "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
@@ -902,16 +900,18 @@
       "stars": 1,
       "featured": false,
       "visible": true,
-      "updated": "2026-11-15",
-      "version": "0.4.0",
+      "updated": "2026-11-18",
+      "version": "0.5.0",
       "lastChanges": [
-        "Éditeur de carrefour (N pour choisir un nœud, M ou C pour l'ouvrir) : chaque voie qui entre se raccorde aux voies qui sortent ; le jeu propose, vous validez ou changez",
-        "Passages piétons, traversées cyclables et régulation (feux, priorités) par carrefour, « Non renseigné » tant que vous ne les posez pas",
-        "Les voies créées dans une rue restent raccordées à ses carrefours, sur la carte comme en 3D"
+        "Flux et demande (F) : posez la demande d'une rue par mode et par sens ; capacité, saturation, personnes / h, temps de parcours et délai aux feux se recalculent à chaque modification",
+        "Les comptages vélo réels de Bruxelles Mobilité (rue de la Loi, Tervueren, Nerviens) servent de demande ; les valeurs de référence sont citées et « Non renseigné » reste la règle sans donnée",
+        "Couche Flux (touche 0) : la saturation des rues sur la carte ; l'inspecteur d'un carrefour compte ses points de conflit par paire de modes"
       ],
       "roadmap": [
         "Couleurs des bandes (cyclable, bus, stationnement, planté) : [À VALIDER]",
-        "Méthode de proposition à confronter au terrain (mouvements interdits, voies d'affectation)"
+        "Méthode de proposition à confronter au terrain (mouvements interdits, voies d'affectation)",
+        "Taux d'occupation des voitures et des bus : aucune source citée (hypothèse du joueur, « Non renseigné » au départ)",
+        "Flux en 3D ; légende de la couche Flux"
       ]
     }
   ],
