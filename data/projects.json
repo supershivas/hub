@@ -362,10 +362,12 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.150.1",
-      "updated": "2026-11-18",
+      "version": "0.154.0",
+      "updated": "2026-11-20",
       "lastChanges": [
-        "La fin de partie dit les régiments dissous : le jour, leur nom barré, à qui sont allés leurs hommes ; ils perdent leurs médailles"
+        "Dans la vue d'un soldat : F (ou le clic quand un ennemi est à deux pas) frappe à la baïonnette ; en courant c'est une charge, sans cartouche un coup de crosse ; le clic droit pare quand l'ennemi est tout près",
+        "V maintenue : « À moi ! », les hommes de son régiment autour de lui le rejoignent",
+        "Tab passe à un camarade ; quand l'homme tombe, la vue tombe avec lui, puis Tab prend un camarade et Échap ouvre sa fiche"
       ],
       "roadmap": [
         "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
@@ -901,11 +903,11 @@
       "featured": false,
       "visible": true,
       "updated": "2026-11-20",
-      "version": "0.9.2",
+      "version": "0.10.0",
       "lastChanges": [
-        "Bêta : feux posés au clic sur un carrefour (outil Feux), avec un panneau pour régler la durée de chaque vert ; les vélos ont leurs feux, plus petits",
-        "Bêta : trottoirs partout, passages piétons à chaque carrefour, et des piétons qui marchent et traversent ; les voitures les attendent",
-        "Bêta : pistes cyclables à double sens (nouvel outil), liaisons cyclables peintes dans les carrefours ; outils groupés par couleur (routes, vélo, carrefours)"
+        "Vue 3D semi-réaliste : le soleil suit l'heure du trafic, avec ses ombres ; le soir tombe, des fenêtres s'allument",
+        "Façades à fenêtres (un étage tous les 3 m, une hypothèse de jeu), toits plats, asphalte et trottoirs de pierre",
+        "Marquages au sol là où vos voies sont définies ; en 3D, axes et nœuds discrets (touches 3 et 4)"
       ],
       "roadmap": [
         "Couleurs des bandes (cyclable, bus, stationnement, planté) : [À VALIDER]",
