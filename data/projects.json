@@ -848,10 +848,10 @@
       "visible": true,
       "stars": 1,
       "tier": "secondaire",
-      "version": "1.126.0",
-      "updated": "2026-11-18",
+      "version": "1.139.0",
+      "updated": "2026-11-20",
       "lastChanges": [
-        "Carte Document : curseur « Taille du texte » de 80 à 120 % (100 % par défaut), avec retour à 100 %"
+        "Camemberts : marge réglable entre l'anneau et les libellés, à gauche et à droite séparément, en tirant un trait dans l'aperçu (12 px au moins)"
       ]
     },
     {
