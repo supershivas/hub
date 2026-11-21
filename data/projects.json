@@ -362,12 +362,11 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.154.0",
-      "updated": "2026-11-20",
+      "version": "0.160.1",
+      "updated": "2026-11-21",
       "lastChanges": [
-        "Dans la vue d'un soldat : F (ou le clic quand un ennemi est à deux pas) frappe à la baïonnette ; en courant c'est une charge, sans cartouche un coup de crosse ; le clic droit pare quand l'ennemi est tout près",
-        "V maintenue : « À moi ! », les hommes de son régiment autour de lui le rejoignent",
-        "Tab passe à un camarade ; quand l'homme tombe, la vue tombe avec lui, puis Tab prend un camarade et Échap ouvre sa fiche"
+        "Le soldat qu'on dirigeait reste visible quand il tombe, sous tous les angles, même au fond d'une tranchée",
+        "La caméra suit son corps là où un obus l'a jeté, pas l'endroit où il a été touché"
       ],
       "roadmap": [
         "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
@@ -848,10 +847,10 @@
       "visible": true,
       "stars": 1,
       "tier": "secondaire",
-      "version": "1.139.0",
-      "updated": "2026-11-20",
+      "version": "1.139.4",
+      "updated": "2026-11-21",
       "lastChanges": [
-        "Camemberts : marge réglable entre l'anneau et les libellés, à gauche et à droite séparément, en tirant un trait dans l'aperçu (12 px au moins)"
+        "Export PDF : les logos SVG restent vectoriels (nets à tout agrandissement) ; une image SVG complexe est rendue en très haute définition"
       ]
     },
     {
