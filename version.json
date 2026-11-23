@@ -1,8 +1,9 @@
 {
-  "version": "1.5.0",
+  "version": "1.6.0",
   "date": "2026-11-23",
   "changes": [
-    "Ajoute l'onglet Mini-outils",
-    "Premier outil : la répartition d'un montant en proportion des salaires de J et B"
+    "Ajoute le mini-outil Équilibre : qui doit combien à qui selon les salaires",
+    "Les projets sont classés par dernière mise à jour",
+    "La fiche d'un projet montre sa capture"
   ]
 }

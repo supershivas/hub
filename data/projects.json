@@ -86,7 +86,7 @@
         "Vercel"
       ],
       "tags": [],
-      "summary": "Application web Next.js hébergée sur Vercel.",
+      "summary": "Gestion de projet maison : projets, sous-projets et notes, synchronisés entre appareils.",
       "thumbnail": "assets/projects/source/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -149,7 +149,7 @@
       "tags": [
         "finance"
       ],
-      "summary": "Application de suivi de portefeuille d'actions.",
+      "summary": "Suivi de portefeuille boursier : positions, transactions, dividendes, analyse de risque et projections.",
       "thumbnail": "assets/projects/stockportfolio/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -175,7 +175,7 @@
         "GitHub Pages"
       ],
       "tags": [],
-      "summary": "Un petit studio de création dans le navigateur.",
+      "summary": "Brainstorming à plusieurs voix : des personas IA (graphiste, DA, éditeur, lecteurs…) débattent d'un sujet créatif, puis une synthèse est produite.",
       "thumbnail": "assets/projects/studio-crea/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -498,7 +498,7 @@
       "tags": [
         "course"
       ],
-      "summary": "Jeu de course.",
+      "summary": "Course de voitures en 3D vue de dessus : les voitures roulent seules, on règle la ligne, l'aspiration, les pneus et l'arrêt au stand. Contre son fantôme ou à deux en ligne.",
       "thumbnail": "assets/projects/crazyracing/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -534,7 +534,7 @@
         "GitHub Pages"
       ],
       "tags": [],
-      "summary": "Jeu navigateur Supershivas.",
+      "summary": "Jeu contemplatif en pixel art : un viking accoste sur un continent enneigé et suit des traces dans la neige, de nuit, dans la tempête.",
       "thumbnail": "assets/projects/kingvi/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -566,7 +566,7 @@
         "GitHub Pages"
       ],
       "tags": [],
-      "summary": "Jeu navigateur Supershivas.",
+      "summary": "Paris, hiver 1871 : Pierre joue de la flûte et les rats sortent des égouts pour le suivre. Pixel art en 3D, à hauteur d'enfant.",
       "thumbnail": "assets/projects/pierre-et-les-rats/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -661,7 +661,7 @@
       "tags": [
         "espace"
       ],
-      "summary": "Bataille spatiale.",
+      "summary": "Bataille spatiale au tour par tour, à jouer en famille : protège ton croiseur vague après vague, lance des vaisseaux depuis le hangar et choisis tes améliorations.",
       "thumbnail": "assets/projects/space-crusader/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -833,7 +833,7 @@
         "Vanilla JS"
       ],
       "tags": [],
-      "summary": "À compléter.",
+      "summary": "Outils de design pour le GSC : créateur de factsheet A4 avec export PDF, organigramme PEC, export de logos en lot. Prévu pour ordinateur.",
       "thumbnail": "assets/projects/gsc-tools/thumb.jpg",
       "screenshots": [],
       "links": {
@@ -880,18 +880,18 @@
     },
     {
       "slug": "Urban-Mobility-Simulator",
-      "title": "Urban-Mobility-Simulator",
-      "type": "app",
+      "title": "Urban Mobility Simulator",
+      "type": "jeu",
       "tech": "Vanilla JS",
       "stack": [
         "Vanilla JS"
       ],
       "tags": [],
-      "summary": "À compléter.",
-      "thumbnail": null,
+      "summary": "Jeu de conception urbaine sur un vrai corridor de Bruxelles : redistribuer l'espace de la rue entre piétons, vélos, transports publics et voitures, sans l'élargir.",
+      "thumbnail": "assets/projects/Urban-Mobility-Simulator/thumb.jpg",
       "screenshots": [],
       "links": {
-        "demo": null,
+        "demo": "https://supershivas.github.io/Urban-Mobility-Simulator/",
         "repo": "https://github.com/supershivas/Urban-Mobility-Simulator",
         "article": null,
         "sources": []

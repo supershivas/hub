@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.6.0 — 2026-11-23
+- Ajoute le mini-outil Équilibre : après des dépenses communes, il dit qui doit combien à qui, en proportion des salaires
+- Les salaires de J et B sont communs aux mini-outils
+- Les projets sont classés par dernière mise à jour ; le tri par étoiles est retiré
+- La fiche d'un projet montre sa capture (clic pour ouvrir la démo)
+- Complète les descriptions trop vagues de plusieurs projets
+
 ## 1.5.0 — 2026-11-23
 - Ajoute l'onglet Mini-outils, pour de petits calculateurs du quotidien
 - Premier outil : la répartition d'un montant en proportion des salaires de J et B (salaires gardés dans le navigateur)

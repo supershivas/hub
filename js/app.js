@@ -1,6 +1,6 @@
-import { startUpdateCheck, loadVersion, loadChangelog, downloadJSON } from '../app-update.js?v=1.5.0';
-import { renderCreate } from './creer.js?v=1.5.0';
-import { renderOutils } from './outils.js?v=1.5.0';
+import { startUpdateCheck, loadVersion, loadChangelog, downloadJSON } from '../app-update.js?v=1.6.0';
+import { renderCreate } from './creer.js?v=1.6.0';
+import { renderOutils } from './outils.js?v=1.6.0';
 
 const TYPES = { app: 'App', jeu: 'Jeu', site: 'Site' };
 const view = document.getElementById('view');
@@ -11,7 +11,6 @@ const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': 
 const safeUrl = u => (/^(https?:|mailto:)/.test(u) ? u : '#');
 const visible = list => list.filter(x => x.visible !== false);
 const TIERS = { primaire: 'Primaire', secondaire: 'Secondaire' };
-const SORTS = { etoiles: 'Étoiles', date: 'Date' };
 const dateFr = iso => (iso ? new Date(iso + 'T12:00:00').toLocaleDateString('fr-FR', { day: 'numeric', month: 'short', year: 'numeric' }) : '');
 const pref = (key, value) => {
   try { if (value === undefined) return localStorage.getItem(key); localStorage.setItem(key, value); } catch { /* stockage indisponible */ }
@@ -45,11 +44,8 @@ function stars(p) {
     [1, 2, 3, 4, 5].map(i => `<i class="ti ti-star${i <= n ? ' on' : ''}"></i>`).join('')}</span>`;
 }
 
-// Primaires d'abord, puis étoiles, puis date : « étoiles » reflète l'importance du projet.
-const bySort = {
-  etoiles: (a, b) => (b.tier === 'primaire') - (a.tier === 'primaire') || (b.stars || 0) - (a.stars || 0) || (b.updated || '').localeCompare(a.updated || ''),
-  date: (a, b) => (b.updated || '').localeCompare(a.updated || '') || (b.stars || 0) - (a.stars || 0),
-};
+// Dernière mise à jour d'abord ; les projets sans date ferment la marche.
+const byUpdate = (a, b) => (b.updated || '').localeCompare(a.updated || '') || a.title.localeCompare(b.title, 'fr');
 
 async function loadTokens() {
   try {
@@ -114,7 +110,6 @@ function renderHome(params) {
   const type = params.get('type') || '';
   const tech = params.get('tech') || '';
   const q = (params.get('q') || '').trim();
-  const sort = params.get('sort') in SORTS ? params.get('sort') : 'etoiles';
   const mode = ['cartes', 'liste'].includes(params.get('v')) ? params.get('v') : (pref('hub-vue') === 'liste' ? 'liste' : 'cartes');
   const techs = [...new Set(projects.map(p => p.tech))].sort((a, b) => a.localeCompare(b, 'fr'));
   const types = Object.keys(TYPES).filter(t => projects.some(p => p.type === t));
@@ -123,9 +118,9 @@ function renderHome(params) {
   const needle = norm(q);
   const shown = projects.filter(p =>
     (!type || p.type === type) && (!tech || p.tech === tech) &&
-    (!needle || norm([p.title, p.summary, p.tech, ...(p.stack || []), ...(p.tags || [])].join(' ')).includes(needle))).sort(bySort[sort]);
+    (!needle || norm([p.title, p.summary, p.tech, ...(p.stack || []), ...(p.tags || [])].join(' ')).includes(needle))).sort(byUpdate);
 
-  const current = { type, tech, sort, v: mode };
+  const current = { type, tech, v: mode };
   const chip = (key, value, label) =>
     `<button class="chip" type="button" data-filter="${key}" data-value="${esc(value)}" aria-pressed="${current[key] === value}">${esc(label)}</button>`;
   const viewBtn = (value, icon, label) =>
@@ -138,7 +133,7 @@ function renderHome(params) {
       <div class="chips" role="group" aria-label="Filtrer par type">${chip('type', '', 'Tous')}${types.map(t => chip('type', t, TYPES[t])).join('')}</div>
       <div class="chips" role="group" aria-label="Filtrer par techno">${chip('tech', '', 'Toutes technos')}${techs.map(t => chip('tech', t, t)).join('')}</div>
       <div class="toolbar-row">
-        <div class="chips" role="group" aria-label="Trier par"><span class="toolbar-label"><i class="ti ti-arrows-sort"></i> Trier</span>${Object.entries(SORTS).map(([k, l]) => chip('sort', k, l)).join('')}</div>
+        <span class="toolbar-label"><i class="ti ti-clock"></i> Dernière mise à jour d'abord</span>
         <div class="view-toggle" role="group" aria-label="Affichage">${viewBtn('cartes', 'layout-grid', 'Afficher en cartes')}${viewBtn('liste', 'list', 'Afficher en liste')}</div>
       </div>
       <div class="count" aria-live="polite">${shown.length} projet${shown.length > 1 ? 's' : ''}</div>
@@ -147,19 +142,18 @@ function renderHome(params) {
 
   const go = next => {
     const sp = new URLSearchParams();
-    // etoiles et cartes sont les valeurs par défaut : on ne les met pas dans l'adresse
-    Object.entries(next).forEach(([k, v]) => v && !(k === 'sort' && v === 'etoiles') && sp.set(k, v));
+    Object.entries(next).forEach(([k, v]) => v && sp.set(k, v));
     if (next.v) pref('hub-vue', next.v);
     const s = sp.toString();
     history.replaceState(null, '', '#/' + (s ? '?' + s : ''));
     renderHome(sp);
   };
   view.querySelectorAll('[data-filter]').forEach(b => b.addEventListener('click', () =>
-    go({ type, tech, q, sort, v: mode, [b.dataset.filter]: b.dataset.value })));
+    go({ type, tech, q, v: mode, [b.dataset.filter]: b.dataset.value })));
   const input = view.querySelector('#q');
   input.addEventListener('input', () => {
     const pos = input.selectionStart;
-    go({ type, tech, q: input.value, sort, v: mode });
+    go({ type, tech, q: input.value, v: mode });
     const again = view.querySelector('#q');
     again.focus(); again.setSelectionRange(pos, pos);
   });
@@ -210,6 +204,16 @@ function releaseInfo(p) {
   return parts.map(x => `<section class="release">${x}</section>`).join('');
 }
 
+// Captures de la fiche : celles du projet, sinon sa miniature (capture de la démo).
+function shots(p) {
+  const list = (p.screenshots || []).length ? p.screenshots : p.thumbnail ? [p.thumbnail] : [];
+  if (!list.length) return '';
+  const img = s => `<img src="${esc(s)}" alt="Capture de ${esc(p.title)}" loading="lazy">`;
+  const demo = p.links?.demo;
+  return `<div class="shots${list.length === 1 ? ' single' : ''}">${list.map(s =>
+    demo ? `<a href="${esc(safeUrl(demo))}" target="_blank" rel="noopener" aria-label="Ouvrir la démo de ${esc(p.title)}">${img(s)}</a>` : img(s)).join('')}</div>`;
+}
+
 function renderDetail(slug) {
   const p = visible(data.projects).find(x => x.slug === slug);
   if (!p) { view.innerHTML = '<a class="back" href="#/"><i class="ti ti-arrow-left"></i> Projets</a><p class="empty">Projet introuvable.</p>'; return; }
@@ -227,7 +231,7 @@ function renderDetail(slug) {
       <p class="lead">${esc(p.summary)}</p>
       <div class="detail-grid">
         <div>
-          ${(p.screenshots || []).length ? `<div class="shots">${p.screenshots.map(s => `<img src="${esc(s)}" alt="Capture de ${esc(p.title)}" loading="lazy">`).join('')}</div>` : ''}
+          ${shots(p)}
           <div class="prose">${prose(descriptionBody(p))}</div>
           ${releaseInfo(p)}
         </div>

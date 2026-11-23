@@ -319,3 +319,10 @@ dialog.cr-modale[open] { display: flex; }
 }
 .mo-montant:focus-within input, .mo-montant:focus-within > span { border-color: var(--accent-text); }
 .mo-montant input:focus { outline: none; }
+.shots.single { grid-template-columns: minmax(0, 1fr); margin-top: 0; }
+.shots a { display: block; }
+.mo-resultat > .hint { margin: 0; }
+.mo-verdict { display: flex; align-items: center; gap: 10px; margin: 4px 0 0; padding: 14px; border-radius: var(--radius-md);
+  background: rgba(192, 57, 43, 0.18); color: var(--fg); font-size: 1.05rem; }
+.mo-verdict .ti { font-size: 22px; color: var(--accent-text); }
+.mo-verdict strong { color: var(--accent-text); font-size: 1.2rem; font-variant-numeric: tabular-nums; }

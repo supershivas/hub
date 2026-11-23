@@ -14,7 +14,7 @@ Vanilla JS statique (modules ES, sans build), GitHub Pages via GitHub Actions. A
 
 ## Structure
 
-`data/projects.json` (données), `js/app.js` (rendu), `js/creer.js` (onglet Créer : prompts de nouveau jeu et de nouvelle app), `js/outils.js` (onglet Mini-outils : un outil = une entrée du tableau `OUTILS`, valeurs gardées dans `localStorage` `hub-outil-<slug>`), `css/style.css`, `scripts/new-project.mjs` (ajout et validation), `docs/AJOUTER-UN-PROJET.md`, `scripts/sync-repos.mjs` + `scripts/enrich-projects.mjs` (version, date, modifications, roadmap) + `scripts/screenshot.mjs` (ajout automatique des nouveaux dépôts, workflow `sync-repos.yml`). Un ajout de projet est un changement de contenu : pas de bump de version.
+`data/projects.json` (données), `js/app.js` (rendu), `js/creer.js` (onglet Créer : prompts de nouveau jeu et de nouvelle app), `js/outils.js` (onglet Mini-outils : un outil = une entrée du tableau `OUTILS`, valeurs gardées dans `localStorage` `hub-outil-<slug>`, salaires de J et B communs dans `hub-outil-salaires`), `css/style.css`, `scripts/new-project.mjs` (ajout et validation), `docs/AJOUTER-UN-PROJET.md`, `scripts/sync-repos.mjs` + `scripts/enrich-projects.mjs` (version, date, modifications, roadmap) + `scripts/screenshot.mjs` (ajout automatique des nouveaux dépôts, workflow `sync-repos.yml`). Un ajout de projet est un changement de contenu : pas de bump de version.
 
 ## Exceptions aux conventions
 
@@ -24,7 +24,7 @@ Mode sombre uniquement (défaut voulu), pas de PWA ni de Supabase (app secondair
 
 Les étoiles se modifient sur la fiche (clic) : enregistrées dans `localStorage` (`hub-stars`), publiées par un commit sur `main` via l'API GitHub avec un jeton fin gardé dans le navigateur (`hub-gh-token`, jamais exporté).
 
-Les champs `tier` (primaire/secondaire) et `stars` (1 à 5) se règlent à la main et pilotent le tri par étoiles ; `version`, `updated`, `lastChanges`, `roadmap` sont écrits par `enrich-projects.mjs` (ne pas les éditer). `description` ne doit pas répéter `summary`.
+Les projets sont classés par `updated` (le plus récent d'abord), sans autre tri. Les champs `tier` (primaire/secondaire) et `stars` (1 à 5) se règlent à la main (affichage seulement) ; `version`, `updated`, `lastChanges`, `roadmap` sont écrits par `enrich-projects.mjs` (ne pas les éditer). `summary` est la description visible (carte et fiche) : la remplacer quand `sync-repos` a mis « À compléter. » ou une phrase vague. `description` ne doit pas répéter `summary`. La fiche montre `screenshots`, ou à défaut `thumbnail`.
 
 Les projets avec `visible: false` sont masqués mais restent dans le fichier. Le lien repo de `les-carnets-wp` (privé) est volontairement absent.
 
