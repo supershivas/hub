@@ -54,9 +54,15 @@ for (const p of db.projects) {
   if (!m) continue;
   const repo = m[1];
   const meta = await api(`repos/${repo}`);
-  const branch = meta?.default_branch || 'main';
-  const [versionTxt, changelog, roadmap] = await Promise.all([
-    raw(repo, branch, ['version.json', 'public/version.json']),
+  // main d'abord : c'est la branche de production (conventions), alors que la branche
+  // par défaut d'un dépôt peut être restée sur une vieille branche de travail (Fusain).
+  let branch = null, versionTxt = null;
+  for (const b of [...new Set(['main', meta?.default_branch].filter(Boolean))]) {
+    versionTxt = await raw(repo, b, ['version.json', 'public/version.json']);
+    if (versionTxt) { branch = b; break; }
+  }
+  branch ||= meta?.default_branch || 'main';
+  const [changelog, roadmap] = await Promise.all([
     raw(repo, branch, ['CHANGELOG.md', 'public/CHANGELOG.md']),
     raw(repo, branch, ['ROADMAP.md', 'docs/ROADMAP.md']),
   ]);

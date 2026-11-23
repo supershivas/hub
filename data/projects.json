@@ -134,7 +134,11 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "updated": "2026-09-30"
+      "updated": "2026-09-30",
+      "version": "1.0.1",
+      "lastChanges": [
+        "L'icône de l'app s'affiche aussi dans les navigateurs et les liens qui demandent favicon.ico"
+      ]
     },
     {
       "slug": "stockportfolio",
@@ -163,7 +167,11 @@
       "visible": true,
       "stars": 2,
       "tier": "secondaire",
-      "updated": "2026-09-30"
+      "updated": "2026-09-30",
+      "version": "1.0.1",
+      "lastChanges": [
+        "L'icône de l'app s'affiche aussi dans les navigateurs et les liens qui demandent favicon.ico"
+      ]
     },
     {
       "slug": "studio-crea",
@@ -328,11 +336,18 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "1.10.0",
-      "updated": "2026-10-28",
+      "version": "1.61.6",
+      "updated": "2026-11-23",
       "lastChanges": [
-        "Double tape du bout du stylet : bascule plume et gomme (aussi le bouton du flanc ; le bout gomme du stylet gomme)",
-        "Rejet de la paume assoupli : seul le déplacement ou le trait d'un doigt isolé près du stylet est ignoré, zoom et annuler restent libres"
+        "Synchronisation : toute la description des calques, cases et pages voyage, y compris les nouveaux types de calques (cartes de dégradé) et leurs futurs réglages"
+      ],
+      "roadmap": [
+        "Fond perdu au stylet : dessiner depuis la marge grise sur la couverture",
+        "Symétrie au stylet (pinceaux à grain, gomme) et numéros de page à l'impression",
+        "Copier sur iPad : l'image arrive-t-elle dans le presse-papiers (Notes, Mac par Handoff) ?",
+        "Règle et perspective au stylet : poignées faciles à attraper, trait qui part dans la bonne direction ; chemin de fer : glisser à la poignée au doigt",
+        "Traits hachés et dédoublés au stylet rapide : confirmer que le correctif v1.50.1 suffit (sinon : noter pinceau, zoom, rotation)",
+        "Info-bulles au long appui : pas de conflit avec le menu de Safari ni avec les gestes existants"
       ]
     },
     {
@@ -362,11 +377,11 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.160.1",
-      "updated": "2026-11-21",
+      "version": "0.161.0",
+      "updated": "2026-11-23",
       "lastChanges": [
-        "Le soldat qu'on dirigeait reste visible quand il tombe, sous tous les angles, même au fond d'une tranchée",
-        "La caméra suit son corps là où un obus l'a jeté, pas l'endroit où il a été touché"
+        "Au labo : quarante objets parachutés en six raretés, en 3D, qui tournent et flottent sous une flèche de leur couleur",
+        "Au labo : un avion lâche une caisse en parachute au-dessus du no man's land, un objet en sort, le premier homme arrivé le prend"
       ],
       "roadmap": [
         "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
@@ -406,11 +421,12 @@
       "version": "0.1.0",
       "updated": "2026-10-14",
       "lastChanges": [
-        "Premier lancement : écran titre, réglages, sauvegarde"
+        "Dix heures du soir : la première heure de la nuit se joue",
+        "Choisis deux visiteurs, écris des fragments avant que la bougie s'éteigne",
+        "Un degré écrit pour la première fois de la nuit (le hapax) compte double"
       ],
       "roadmap": [
-        "La boucle de jeu, jouable aux deux cibles",
-        "Le critère de validation, mesuré (voir DESIGN.md)"
+        "Validation de Jérôme en jouant sur téléphone → 1.0.0 sur sa décision"
       ]
     },
     {
