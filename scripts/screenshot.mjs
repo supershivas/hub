@@ -26,8 +26,11 @@ let failed = 0;
 for (const p of todo) {
   const page = await browser.newPage({ viewport: { width: 1280, height: 800 } });
   try {
+    // Attendre la fin du chargement (réseau calme, puis délai) : sinon on capture
+    // l'écran de chargement des jeux (Kingvi, Urban Mobility Simulator…).
     await page.goto(p.links.demo, { waitUntil: 'load', timeout: 30000 });
-    await page.waitForTimeout(2500);
+    await page.waitForLoadState('networkidle', { timeout: 30000 }).catch(() => {});
+    await page.waitForTimeout(6000);
     mkdirSync(join(root, 'assets/projects', p.slug), { recursive: true });
     const rel = `assets/projects/${p.slug}/thumb.jpg`;
     await page.screenshot({ path: join(root, rel), type: 'jpeg', quality: 78 });
