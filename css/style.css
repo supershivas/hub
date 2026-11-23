@@ -284,3 +284,38 @@ dialog.cr-modale[open] { display: flex; }
   .cr-item:hover, .cr-choix label:hover { border-color: var(--accent-text); }
 }
 @media (max-width: 420px) { .app-nav a { padding: 0 8px; } .app-header { gap: 8px; } }
+
+/* Page Mini-outils (js/outils.js) */
+.mo-onglets { margin-bottom: 20px; }
+.mo-onglets .chip { gap: 8px; text-decoration: none; }
+.mo-form { display: grid; gap: 16px; max-width: 560px; }
+.mo-bloc { display: grid; gap: 14px; padding: 16px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
+.mo-bloc h2 { font-size: 1.15rem; }
+.mo-bloc .hint { margin: 0; }
+.mo-duo { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+.mo-champ { display: grid; gap: 6px; min-width: 0; }
+.mo-champ > span:first-child { font-weight: 500; }
+.mo-champ small { color: var(--muted); font-size: .85rem; }
+.mo-montant { display: flex; align-items: stretch; min-width: 0; }
+.mo-montant input {
+  flex: 1; width: 100%; min-width: 0; min-height: 44px; padding: 10px 12px; border: 1px solid var(--border); border-right: 0;
+  border-radius: var(--radius-md) 0 0 var(--radius-md); background: var(--surface-2); color: var(--fg); font: inherit; font-size: 16px;
+  text-align: right; font-variant-numeric: tabular-nums;
+}
+.mo-montant > span { display: flex; align-items: center; padding: 0 12px; border: 1px solid var(--border);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0; color: var(--muted); }
+.mo-resultat { display: grid; gap: 8px; }
+.mo-part { display: flex; align-items: baseline; gap: 12px; padding: 12px 14px; border-radius: var(--radius-md); background: var(--surface-2); }
+.mo-nom { font-weight: 600; min-width: 1.5em; }
+.mo-pct { color: var(--muted); font-size: .9rem; font-variant-numeric: tabular-nums; margin-right: auto; }
+.mo-part strong { font-size: 1.25rem; font-weight: 600; color: var(--accent-text); font-variant-numeric: tabular-nums; }
+
+/* En-tête étroit : la navigation passe sur une deuxième ligne, défilable si besoin */
+.app-nav a { white-space: nowrap; }
+@media (max-width: 560px) {
+  .app-header { flex-wrap: wrap; column-gap: 8px; padding: 0 8px 0 16px; }
+  .app-nav { order: 3; flex-basis: 100%; margin: 0 0 0 -12px; overflow-x: auto; scrollbar-width: none; }
+  .app-nav::-webkit-scrollbar { display: none; }
+}
+.mo-montant:focus-within input, .mo-montant:focus-within > span { border-color: var(--accent-text); }
+.mo-montant input:focus { outline: none; }

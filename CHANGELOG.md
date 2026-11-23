@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.0 — 2026-11-23
+- Ajoute l'onglet Mini-outils, pour de petits calculateurs du quotidien
+- Premier outil : la répartition d'un montant en proportion des salaires de J et B (salaires gardés dans le navigateur)
+
 ## 1.4.2 — 2026-11-10
 - Corrige le prompt de nouvelle app resté vide après une mise à jour : le navigateur gardait l'ancien code en cache
 - Affiche un message clair si un modèle de prompt ne peut pas être lu

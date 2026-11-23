@@ -1,5 +1,6 @@
-import { startUpdateCheck, loadVersion, loadChangelog, downloadJSON } from '../app-update.js?v=1.4.2';
-import { renderCreate } from './creer.js?v=1.4.2';
+import { startUpdateCheck, loadVersion, loadChangelog, downloadJSON } from '../app-update.js?v=1.5.0';
+import { renderCreate } from './creer.js?v=1.5.0';
+import { renderOutils } from './outils.js?v=1.5.0';
 
 const TYPES = { app: 'App', jeu: 'Jeu', site: 'Site' };
 const view = document.getElementById('view');
@@ -77,7 +78,7 @@ function toast(msg) {
   toast.timer = setTimeout(() => { popover ? el.matches(':popover-open') && el.hidePopover() : (el.hidden = true); }, 4000);
 }
 
-/* ── Routage par hash : #/ (accueil, filtres en query), #/p/<slug>, #/liens ── */
+/* ── Routage par hash : #/ (accueil, filtres en query), #/p/<slug>, #/creer, #/outils, #/liens ── */
 function parseRoute() {
   const [path, query = ''] = location.hash.replace(/^#/, '').split('?');
   return { parts: path.split('/').filter(Boolean), params: new URLSearchParams(query) };
@@ -85,7 +86,7 @@ function parseRoute() {
 
 function render() {
   const { parts, params } = parseRoute();
-  const section = parts[0] === 'liens' || parts[0] === 'creer' ? parts[0] : parts[0] === 'p' ? 'p' : 'home';
+  const section = ['liens', 'creer', 'outils'].includes(parts[0]) ? parts[0] : parts[0] === 'p' ? 'p' : 'home';
   document.querySelectorAll('[data-nav]').forEach(a => {
     const on = a.dataset.nav === section;
     on ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current');
@@ -93,6 +94,7 @@ function render() {
   document.getElementById('settings').open && document.getElementById('settings').close();
   if (parts[0] === 'p' && parts[1]) renderDetail(decodeURIComponent(parts[1]));
   else if (parts[0] === 'liens') renderLinks();
+  else if (parts[0] === 'outils') renderOutils(view, parts[1]);
   else if (parts[0] === 'creer') renderCreate(view, parts[1], { projects: data.projects, toast });
   else renderHome(params);
   if (!render.first) { window.scrollTo(0, 0); }

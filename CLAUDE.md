@@ -10,11 +10,11 @@ Catégorie : secondaire. Cible : mobile et bureau.
 
 ## Stack
 
-Vanilla JS statique (modules ES, sans build), GitHub Pages via GitHub Actions. Aucune base : tout est dans `data/projects.json` (`schemaVersion` 1). Routage par hash (`#/`, `#/p/<slug>`, `#/creer/jeu`, `#/creer/app`, `#/liens`).
+Vanilla JS statique (modules ES, sans build), GitHub Pages via GitHub Actions. Aucune base : tout est dans `data/projects.json` (`schemaVersion` 1). Routage par hash (`#/`, `#/p/<slug>`, `#/creer/jeu`, `#/creer/app`, `#/outils/<outil>`, `#/liens`).
 
 ## Structure
 
-`data/projects.json` (données), `js/app.js` (rendu), `js/creer.js` (onglet Créer : prompts de nouveau jeu et de nouvelle app), `css/style.css`, `scripts/new-project.mjs` (ajout et validation), `docs/AJOUTER-UN-PROJET.md`, `scripts/sync-repos.mjs` + `scripts/enrich-projects.mjs` (version, date, modifications, roadmap) + `scripts/screenshot.mjs` (ajout automatique des nouveaux dépôts, workflow `sync-repos.yml`). Un ajout de projet est un changement de contenu : pas de bump de version.
+`data/projects.json` (données), `js/app.js` (rendu), `js/creer.js` (onglet Créer : prompts de nouveau jeu et de nouvelle app), `js/outils.js` (onglet Mini-outils : un outil = une entrée du tableau `OUTILS`, valeurs gardées dans `localStorage` `hub-outil-<slug>`), `css/style.css`, `scripts/new-project.mjs` (ajout et validation), `docs/AJOUTER-UN-PROJET.md`, `scripts/sync-repos.mjs` + `scripts/enrich-projects.mjs` (version, date, modifications, roadmap) + `scripts/screenshot.mjs` (ajout automatique des nouveaux dépôts, workflow `sync-repos.yml`). Un ajout de projet est un changement de contenu : pas de bump de version.
 
 ## Exceptions aux conventions
 

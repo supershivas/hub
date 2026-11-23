@@ -1,7 +1,8 @@
 {
-  "version": "1.4.2",
-  "date": "2026-11-10",
+  "version": "1.5.0",
+  "date": "2026-11-23",
   "changes": [
-    "Corrige le prompt de nouvelle app resté vide après une mise à jour (ancien fichier en cache)"
+    "Ajoute l'onglet Mini-outils",
+    "Premier outil : la répartition d'un montant en proportion des salaires de J et B"
   ]
 }
