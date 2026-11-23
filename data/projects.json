@@ -377,11 +377,12 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.161.0",
+      "version": "0.167.0",
       "updated": "2026-11-23",
       "lastChanges": [
-        "Au labo : quarante objets parachutés en six raretés, en 3D, qui tournent et flottent sous une flèche de leur couleur",
-        "Au labo : un avion lâche une caisse en parachute au-dessus du no man's land, un objet en sort, le premier homme arrivé le prend"
+        "Toutes les vues à la personne : les commandes toujours affichées, et en bas à droite un tableau de bord nommé (Fusil Lebel, Canon de 75, Hotchkiss…) avec l'état et les munitions",
+        "La mitrailleuse à la personne : l'arme en bas de l'image, sa bande qui défile, les douilles qui sautent, des rafales rapides vers l'ennemi, sans le cône",
+        "Le char : un obus rapide et tendu, ses mitrailleuses qu'on voit tirer, le tir tout près ; le soldat : la barre de la culasse entre deux coups, le guidon juste sous le viseur"
       ],
       "roadmap": [
         "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
