@@ -336,10 +336,10 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "1.61.6",
-      "updated": "2026-11-23",
+      "version": "1.63.1",
+      "updated": "2026-11-24",
       "lastChanges": [
-        "Synchronisation : toute la description des calques, cases et pages voyage, y compris les nouveaux types de calques (cartes de dégradé) et leurs futurs réglages"
+        "Pinceaux à grain plus rapides : aquarelle et gouache 3 à 5 fois, lavis 4 fois, acrylique, craie, fusain et estompe 2 fois"
       ],
       "roadmap": [
         "Fond perdu au stylet : dessiner depuis la marge grise sur la couverture",
@@ -384,12 +384,12 @@
         "Plus d'erreur au chargement du jeu (un fichier d'animations manquait)"
       ],
       "roadmap": [
-        "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
-        "**Mesure du feuillage rond** : 42 triangles par touffe au lieu de 30 (+40 %), mais pas de comparaison avant / après sur la même machine ; à refaire (`scripts/mesure.mjs --soldats 2000`), le rendu est déjà à 124 ms à 4 px/m.",
-        "**Bâtiments des bases** : l'aspect lui-même n'est pas refondu (seuls drapeaux, socle et hommes ont été ajoutés).",
-        "**Volutes de fumée** plus réalistes (forme faite, mouvement à juger en jeu).",
-        "**Hôpital** : les blessés « en déroute » n'y vont pas (dépend du lot D).",
-        "**Lacs vrais** (fond qui monte, niveau d'eau qui déborde d'un trou à l'autre) : non fait, la pluie érode seulement les parois."
+        "**Les vues à la personne, deuxième passe** (v0.165.0 → v0.169.0) — **à mesurer** :",
+        "**Fluidité** (Jérôme, v0.134.1 : « le jeu lag ») — **en cours** : attend les",
+        "**Les largages et les caprices** (v0.162.0, v0.163.0) — **à mesurer** : la",
+        "**Le jeu à deux** (lockstep, WebRTC, ntfy.sh) : **gardé tel qu'il est dans le",
+        "**Le labo lumière** (`js/lumiere/`) : son passage en jeu (`docs/chantiers/lumiere-vers-le-jeu.md`).",
+        "**L'atelier d'animation** : `docs/chantiers/animations-vers-le-jeu.md`."
       ]
     },
     {
