@@ -377,12 +377,11 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.167.0",
-      "updated": "2026-11-23",
+      "version": "0.169.0",
+      "updated": "2026-11-24",
       "lastChanges": [
-        "Toutes les vues à la personne : les commandes toujours affichées, et en bas à droite un tableau de bord nommé (Fusil Lebel, Canon de 75, Hotchkiss…) avec l'état et les munitions",
-        "La mitrailleuse à la personne : l'arme en bas de l'image, sa bande qui défile, les douilles qui sautent, des rafales rapides vers l'ennemi, sans le cône",
-        "Le char : un obus rapide et tendu, ses mitrailleuses qu'on voit tirer, le tir tout près ; le soldat : la barre de la culasse entre deux coups, le guidon juste sous le viseur"
+        "La mitrailleuse en main tire aussi haut et bas : vers le sol elle creuse de petits trous, elle déchiquette les arbres qui finissent par tomber, trop haut elle passe au-dessus des têtes",
+        "Plus d'erreur au chargement du jeu (un fichier d'animations manquait)"
       ],
       "roadmap": [
         "**Variantes au labo non faites** pour les arbres et la fumée (la roadmap les demandait avant le jeu) : Jérôme les regarde en jeu et tranche (garder, ou ouvrir un sujet du labo).",
