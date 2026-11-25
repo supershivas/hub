@@ -863,10 +863,12 @@
       "visible": true,
       "stars": 1,
       "tier": "secondaire",
-      "version": "1.139.4",
-      "updated": "2026-11-21",
+      "version": "1.142.0",
+      "updated": "2026-11-25",
       "lastChanges": [
-        "Export PDF : les logos SVG restent vectoriels (nets à tout agrandissement) ; une image SVG complexe est rendue en très haute définition"
+        "Factsheet creator : « Enregistrer dans le navigateur » (Cmd/Ctrl + S) garde le projet sur l'accueil sans passer par un fichier .json",
+        "Export PDF : deux usages prêts, Impression (CMJN, 300 dpi, FOGRA39) et Écran (RVB, 72 dpi, fichier léger), ou personnalisé",
+        "Fermer le dernier onglet ramène à l'accueil, qui montre aussi l'aperçu de la dernière dataviz"
       ]
     },
     {
