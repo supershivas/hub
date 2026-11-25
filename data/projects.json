@@ -377,11 +377,11 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.169.0",
-      "updated": "2026-11-24",
+      "version": "0.170.0",
+      "updated": "2026-11-25",
       "lastChanges": [
-        "La mitrailleuse en main tire aussi haut et bas : vers le sol elle creuse de petits trous, elle déchiquette les arbres qui finissent par tomber, trop haut elle passe au-dessus des têtes",
-        "Plus d'erreur au chargement du jeu (un fichier d'animations manquait)"
+        "Un bouton « Édition itch.io » sur l'écran titre : l'édition en préparation pour itch.io, avec ses propres parties et réglages, sans le jeu à deux",
+        "« Le jeu actuel » y ramène ; l'adresse /itch/ ouvre directement l'édition itch.io"
       ],
       "roadmap": [
         "**Les vues à la personne, deuxième passe** (v0.165.0 → v0.169.0) — **à mesurer** :",
