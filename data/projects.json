@@ -377,11 +377,11 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.170.0",
-      "updated": "2026-11-25",
+      "version": "0.170.2",
+      "updated": "2026-11-26",
       "lastChanges": [
-        "Un bouton « Édition itch.io » sur l'écran titre : l'édition en préparation pour itch.io, avec ses propres parties et réglages, sans le jeu à deux",
-        "« Le jeu actuel » y ramène ; l'adresse /itch/ ouvre directement l'édition itch.io"
+        "Au labo : le paquet de cartes devient un booster brillant qui penche vers le curseur ; on le déchire, les cartes sortent une à une par le haut, de la plus commune à la plus rare",
+        "Les cartes penchent au survol ; les mythiques ont un foil"
       ],
       "roadmap": [
         "**Les vues à la personne, deuxième passe** (v0.165.0 → v0.169.0) — **à mesurer** :",
