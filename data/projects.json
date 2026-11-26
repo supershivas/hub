@@ -377,11 +377,10 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.170.2",
+      "version": "0.170.6",
       "updated": "2026-11-26",
       "lastChanges": [
-        "Au labo : le paquet de cartes devient un booster brillant qui penche vers le curseur ; on le déchire, les cartes sortent une à une par le haut, de la plus commune à la plus rare",
-        "Les cartes penchent au survol ; les mythiques ont un foil"
+        "Au labo : les cartes qui sortent du paquet prennent le dessin retenu, l'étiquette"
       ],
       "roadmap": [
         "**Les vues à la personne, deuxième passe** (v0.165.0 → v0.169.0) — **à mesurer** :",
@@ -863,12 +862,12 @@
       "visible": true,
       "stars": 1,
       "tier": "secondaire",
-      "version": "1.142.0",
-      "updated": "2026-11-25",
+      "version": "1.144.0",
+      "updated": "2026-11-26",
       "lastChanges": [
-        "Factsheet creator : « Enregistrer dans le navigateur » (Cmd/Ctrl + S) garde le projet sur l'accueil sans passer par un fichier .json",
-        "Export PDF : deux usages prêts, Impression (CMJN, 300 dpi, FOGRA39) et Écran (RVB, 72 dpi, fichier léger), ou personnalisé",
-        "Fermer le dernier onglet ramène à l'accueil, qui montre aussi l'aperçu de la dernière dataviz"
+        "Factsheet creator : on peut fermer tous les onglets, l'accueil reste alors affiché (aussi au prochain lancement)",
+        "Dataviz : clic sur un libellé dans l'aperçu = barre de mise en forme (gras, italique, souligné, taille, couleur) pour ce libellé seul",
+        "Style de tous les libellés dans la carte Textes, pour les barres, courbes, pictogrammes, nuages de points et graphiques hiérarchiques"
       ]
     },
     {
