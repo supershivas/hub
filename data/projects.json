@@ -336,10 +336,10 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "1.63.1",
-      "updated": "2026-11-24",
+      "version": "1.63.2",
+      "updated": "2026-11-27",
       "lastChanges": [
-        "Pinceaux à grain plus rapides : aquarelle et gouache 3 à 5 fois, lavis 4 fois, acrylique, craie, fusain et estompe 2 fois"
+        "Remplir : toucher une petite zone (plus étroite que le trou à boucher) la remplit, au lieu de remplir la zone voisine"
       ],
       "roadmap": [
         "Fond perdu au stylet : dessiner depuis la marge grise sur la couverture",
@@ -377,10 +377,10 @@
       "visible": true,
       "stars": 3,
       "tier": "secondaire",
-      "version": "0.170.6",
-      "updated": "2026-11-26",
+      "version": "0.170.7",
+      "updated": "2026-11-27",
       "lastChanges": [
-        "Au labo : les cartes qui sortent du paquet prennent le dessin retenu, l'étiquette"
+        "Au labo : les cartes du soir montrent la nouvelle série « La percée » (le crapouillot, le nid du matin, le moteur gonflé, le FT du matin, l'escadrille)"
       ],
       "roadmap": [
         "**Les vues à la personne, deuxième passe** (v0.165.0 → v0.169.0) — **à mesurer** :",
@@ -862,12 +862,10 @@
       "visible": true,
       "stars": 1,
       "tier": "secondaire",
-      "version": "1.144.0",
-      "updated": "2026-11-26",
+      "version": "1.147.3",
+      "updated": "2026-11-27",
       "lastChanges": [
-        "Factsheet creator : on peut fermer tous les onglets, l'accueil reste alors affiché (aussi au prochain lancement)",
-        "Dataviz : clic sur un libellé dans l'aperçu = barre de mise en forme (gras, italique, souligné, taille, couleur) pour ce libellé seul",
-        "Style de tous les libellés dans la carte Textes, pour les barres, courbes, pictogrammes, nuages de points et graphiques hiérarchiques"
+        "Projets dataviz : les couleurs modifiées sont enregistrées tout de suite et survivent à un rechargement de la page"
       ]
     },
     {
